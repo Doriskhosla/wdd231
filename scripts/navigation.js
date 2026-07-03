@@ -8,10 +8,13 @@ menuButton.addEventListener('click', () => {
     menuButton.setAttribute('aria-expanded', isExpanded);
 });
 
+// SAFE form check
 const form = document.querySelector('#contactForm');
 
-form.addEventListener('submit', (event) => {
-    event.preventDefault();
-    alert('Form submitted!');
-    form.reset();
-});
+if (form) {
+    form.addEventListener('submit', (event) => {
+        event.preventDefault();
+        alert('Form submitted!');
+        form.reset();
+    });
+}

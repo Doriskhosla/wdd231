@@ -4,34 +4,32 @@
     header {
         display: flex;
         flex-direction: row;
-        /* horizontal layout on larger screens */
         align-items: center;
-        /* vertically center items */
         justify-content: space-between;
     }
 
-    #menu-button {
+    /* hide hamburger on desktop */
+    #menu {
         display: none;
     }
 
-    #primary-nav {
-        align-self: center;
-        /* vertically center nav links */
+    /* desktop navigation */
+    #navMenu {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
     }
 
     .branding img {
         width: 110px;
-        /* bigger logo on desktop */
     }
 
     /* CONTACT FORM */
     .contact form {
         max-width: 800px;
-        /* wider form on desktop */
     }
 
     .contact {
         padding: 3rem 6rem;
-        /* more breathing room */
     }
 }
