@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <meta name="description"
+        content="Welcome to the Sandy Business Chamber of Commerce. Sandy City is a growing, friendly community at the base of the Wasatch Mountains, and we’re proud to support local businesses, entrepreneurs, and residents who help our city thrive.">
+
+    <meta name="author" content="Maria D. Khosla">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css" media="screen and (min-width: 750px)">
+
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="logo">
+            <img src="images/sandylocal.png" alt="Sandy Local Logo">
+        </div>
+
+        <!-- hamburger icon for small screens -->
+        <button id="menu" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+
+        <nav id="navMenu">
+            <a id="home" href="index.html">Home</a>
+            <a id="chamber" href="chamber.html">Chamber</a>
+            <a id="final-project" href="final-project.html">Final Project</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="hero">
+
+
+            <img src="images/evolution.jpg" alt="Sandy City" width="1200" height="600">
+
+            <div class="hero-text">
+                <h1>Welcome to the Sandy Business Chamber of Commerce</h1>
+                <p>Supporting local businesses, entrepreneurs, and residents in Sandy City.</p>
+            </div>
+        </section>
+
+        <section class="branding-box">
+
+            <h2>Building a Strong Business Community</h2>
+            <p>We are committed to fostering a vibrant and supportive business environment in Sandy City.</p>
+        </section>
+
+
+        <section class="contact">
+
+            <h2>Contact information</h2>
+            <form id="contactForm">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+
+
+        </section>
+
+
+    </main>
+
+    <footer>
+
+
+        <div class="social">
+        <div class="social-icons">
+            <a href="https://github.com/YourGitHubUsername" target="_blank">
+                <img src="images/github.png" alt="GitHub">
+            </a>
+        
+            <a href="https://www.linkedin.com/in/YourLinkedInProfile" target="_blank">
+                <img src="images/linkedin.png" alt="LinkedIn">
+            </a>
+        
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.png" alt="Facebook">
+            </a>
+        
+            <a href="https://twitter.com" target="_blank">
+                <img src="images/twitter.png" alt="Twitter">
+            </a>
+        </div>
+        </div>
+
+        <p>&copy; <span id="CurrentYear"></span> Maria D. Khosla. | Utah, USA | All rights reserved</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+
+
+    </footer>
+
+
+
+</body>
+
+</html>
