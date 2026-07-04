@@ -152,6 +152,7 @@ header,
 
 .hero img {
     width: 100%;
+    height: auto; /* keeps perfect aspect ratio */
     display: block;
 }
 
