@@ -14,8 +14,8 @@
     margin-top: 0.5rem;
     /* move UP */
     margin-left: auto;
-    /* pushes the form to the right */
-    margin-right: 2rem;
+    /* pushes the form to the center */
+    margin-right: auto;
     /* spacing from the right edge */
     display: flex;
     flex-direction: column;
@@ -180,6 +180,18 @@ header,
     font-size: clamp(1rem, 2.5vw, 1.3rem);
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
 
 
 .branding-box {
@@ -239,6 +251,7 @@ footer p {
     font-size: 1.5rem;
     text-decoration: none;
 }
+
 .social-icons img {
     width: 30px;
     height: 30px;
