@@ -369,11 +369,12 @@ h1 {
    GRID SECTIONS (TOP + BOTTOM)
 ========================= */
 
-.top-grid,
+/* Bottom grid layout */
 .bottom-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
+    margin-top: 2rem;
 }
 
 /* shared card style for BOTH grids */
@@ -385,15 +386,17 @@ h1 {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
-/* spacing differences only */
+/* Top grid layout */
 .top-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    /* About bigger, Photo smaller */
+    gap: 2rem;
+    align-items: stretch;
+    /* equal height */
+    margin-top: 2rem;
     margin-bottom: 2rem;
 }
-
-.bottom-grid {
-    margin-top: 2rem;
-}
-
 
 /* =========================
    CERTIFICATE SECTION
