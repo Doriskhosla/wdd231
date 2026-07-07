@@ -1,5 +1,3 @@
-
-
 /* =========================
    BASE PAGE STYLES
 ========================= */
@@ -111,6 +109,19 @@ h1 {
 /* =========================
    GRID SECTIONS (TOP + BOTTOM)
 ========================= */
+/* Top grid layout */
+.top-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    /* About bigger, Photo smaller */
+    gap: 2rem;
+    align-items: stretch;
+    /* equal height */
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+
 
 /* Bottom grid layout */
 .bottom-grid {
@@ -129,17 +140,7 @@ h1 {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
-/* Top grid layout */
-.top-grid {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    /* About bigger, Photo smaller */
-    gap: 2rem;
-    align-items: stretch;
-    /* equal height */
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
+
 
 /* =========================
    CERTIFICATE SECTION
@@ -191,17 +192,7 @@ h1 {
 /* =========================
    IMAGES
 ========================= */
-/* Layout for About + Photo row */
-.top-grid {
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    /* About = bigger, Photo = smaller */
-    gap: 2rem;
-    align-items: stretch;
-    /* makes both sections equal height */
-    margin-top: 2rem;
 
-}
 
 /* About section */
 .about {
