@@ -170,10 +170,17 @@ h1 {
     color: white;
     cursor: pointer;
     border-radius: 8px;
-    width: 300px;
+    width: 302px;
     font-weight: bold;
     cursor: pointer;
 
+}
+
+#wdd130,
+#wdd131,
+#wdd231 {
+    padding: 6px 12px;
+    /*smaller height */
 }
 
 .filters button:hover {
@@ -226,8 +233,18 @@ h2 {
 footer {
     text-align: center;
     padding: 1rem;
-    background: #f4f4f4;
+
     margin-top: 2rem;
+}
+
+.footer-info {
+    margin-top: 1rem;
+    padding: 1rem;
+    background: #e8e8e8;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(87, 81, 81, 0.15);
+    text-align: center;
+
 }
 
 /* =========================
