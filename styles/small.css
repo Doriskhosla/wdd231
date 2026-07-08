@@ -135,7 +135,7 @@ h1 {
 .top-grid section,
 .bottom-grid section {
     background: white;
-    padding: 0rem;
+    padding: 1rem;
     border-radius: 10px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
@@ -159,9 +159,9 @@ h1 {
     gap: 10px;
     flex-wrap: wrap;
 }
-
+/* ALL BUTTONS (default wide) */
 .filters button {
-    padding: 12px;
+    padding: 12px 26px;
     margin: 5px;
     border: none;
     background: #112941;
@@ -170,24 +170,30 @@ h1 {
     border-radius: 8px;
     font-weight: bold;
 
-    /* FIXED: no horizontal scrolling */
     width: auto;
-    min-width: 100px;
+    min-width: 140px;
+    /* default width */
 }
 
+/* TOP 3 BUTTONS (extra wide) */
+#all,
+#wdd,
+#cse {
+    min-width: 150px;
+}
 
+/* BOTTOM 3 BUTTONS (thinner) */
 #wdd130,
 #wdd131,
 #wdd231 {
     padding: 6px 12px;
-    /*smaller height */
+    min-width: 100px !important;
+    /* FORCE thinner width */
 }
 
 .filters button:hover {
     background: #080a11;
 }
-
-
 /* Course cards container */
 #courseList {
     display: grid;
@@ -198,7 +204,7 @@ h1 {
 
 .course-card {
     background: #ffffff;
-    padding: auto;
+    padding: 1rem;
     border-radius: 8px;
     margin: 8px 0;
     box-shadow: 0 4px 4px rgba(0, 0, 0, 0.4);
