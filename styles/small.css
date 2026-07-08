@@ -161,7 +161,6 @@ h1 {
 }
 
 
-
 .filters button {
     padding: 12px;
     margin: 5px;
@@ -170,9 +169,10 @@ h1 {
     color: white;
     cursor: pointer;
     border-radius: 8px;
-    width: 302px;
+    min-width: 140px;
+    width: 100%;
+    max-width: 300px;
     font-weight: bold;
-    cursor: pointer;
 
 }
 
@@ -201,12 +201,13 @@ h1 {
     padding: 1rem;
     border-radius: 8px;
     margin: 10px 0;
-    box-shadow:  0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
 }
 
 .course-card.completed {
-    background: #d8f5d8; /* light green for completed */
+    background: #d8f5d8;
+    /* light green for completed */
     border-left: 6px solid #2e8b57;
 }
 
