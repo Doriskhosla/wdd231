@@ -273,12 +273,8 @@ footer {
 /* =========================
    RESPONSIVE (MOBILE)
 ========================= */
-header {
-    display: grid;
-    grid-template-columns: 80px auto 32px 44px;
-    align-items: center;
-    gap: 10px;
-}
+
+
 
 @media (max-width: 750px) {
 
@@ -291,4 +287,20 @@ header {
         flex-direction: column;
         align-items: center;
     }
+
+    /* Hide menu by default on mobile */
+    #navMenu {
+        display: none;
+        flex-direction: column;
+        background: #151922;
+        padding: 1rem;
+        margin: 0;
+        width: 100%;
+    }
+
+    /* Show menu when JS toggles .show */
+    #navMenu.show {
+        display: flex;
+    }
+
 }

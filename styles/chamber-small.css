@@ -122,6 +122,28 @@ header,
     display: none;
 }
 
+
+
+/*==========================
+  CHAMBER HEADER (default)
+======================== */
+header {
+    display: grid;
+    grid-template-columns: 80px auto 32px 44px;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+
+/* other base Chamber styles here... */
+
+
+
+
+
+
 /* MOBILE */
 @media (max-width: 768px) {
 
