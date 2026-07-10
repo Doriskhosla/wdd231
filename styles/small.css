@@ -159,6 +159,7 @@ h1 {
     gap: 10px;
     flex-wrap: wrap;
 }
+
 /* ALL BUTTONS (default wide) */
 .filters button {
     padding: 12px 26px;
@@ -194,6 +195,7 @@ h1 {
 .filters button:hover {
     background: #080a11;
 }
+
 /* Course cards container */
 #courseList {
     display: grid;
@@ -271,6 +273,12 @@ footer {
 /* =========================
    RESPONSIVE (MOBILE)
 ========================= */
+header {
+    display: grid;
+    grid-template-columns: 80px auto 32px 44px;
+    align-items: center;
+    gap: 10px;
+}
 
 @media (max-width: 750px) {
 
