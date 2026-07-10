@@ -278,10 +278,18 @@ footer {
 
 @media (max-width: 750px) {
 
+    header {
+        display: grid;
+        grid-template-columns: 80px auto 44px;
+        align-items: center;
+        gap: 10px;
+    }
+
     .top-grid,
     .bottom-grid {
         grid-template-columns: 1fr;
     }
+
 
     nav {
         flex-direction: column;
