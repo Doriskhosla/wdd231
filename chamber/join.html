@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandy Business Alliance | Join</title>
+    
+    
+    
+    <link rel="icon" href="favicon.ico">
+    
+    
+    
+    
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/larger.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Sandy Business Alliance Logo">
+            <h1>Sandy Business Alliance</h1>
+        </div>
+        <button id="menu">☰</button>
+        <nav id="navMenu">
+            <a href="index.html">Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html" class="active">Join</a>
+            <a href="thankyou.html">Thank You</a>
+        </nav>
+    </header>
+
+    
+    
+    
+    
+    
+    <main>
+        <h2>Join the Chamber</h2>
+
+        <section class="benefits">
+            <h3>Membership Benefits</h3>
+            <ul>
+                <li>Networking opportunities</li>
+                <li>Business promotion</li>
+                <li>Community involvement</li>
+                <li>Training and workshops</li>
+            </ul>
+        </section>
+
+        <section class="levels">
+            <h3>Membership Levels</h3>
+            <p>Non-profit, Silver, Gold</p>
+        </section>
+
+        
+        
+        
+        
+        <form action="thankyou.html" method="get">
+            <label>First Name: <input type="text" name="fname" required></label>
+            <label>Last Name: <input type="text" name="lname" required></label>
+            <label>Email: <input type="email" name="email" required></label>
+            <label>Phone: <input type="tel" name="phone"></label>
+
+            
+            <label>Business Name: <input type="text" name="business"></label>
+
+            <label>Membership Level:
+                <select name="level" required>
+                    <option value="np">Non-profit</option>
+                    <option value="silver">Silver</option>
+                    <option value="gold">Gold</option>
+                </select>
+            </label>
+
+            <button type="submit">Join Now</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Sandy Business Alliance • Doris • WDD 231</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+
+    <script src="js/date.js"></script>
+</body>
+
+</html>
