@@ -304,7 +304,7 @@ footer p {
 }
 
 .events {
-    background-color: #cab6b6;
+    background-color: #638094;
     padding: 1.5rem;
     margin: 2rem 0;
     border-radius: 10px;
@@ -323,11 +323,11 @@ footer p {
 }
 
 .events li {
-    background: rgb(189, 195, 209);
+    background: rgb(210, 215, 224);
     padding: 1rem;
     margin-bottom: 1rem;
     border-radius: 8px;
-    border-left: 5px solid #ac7da8;
+    border-left: 5px solid #2c1e2b;
 }
 
 .weather {
@@ -354,7 +354,7 @@ footer p {
 }
 
 .spotlights {
-    background-color: #bccac8;
+    background-color: #638094;
     padding: 1.5rem;
     margin: 2rem 0;
     border-radius: 10px;
