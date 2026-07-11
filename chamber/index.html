@@ -14,12 +14,14 @@
     <link rel="stylesheet" href="css/chamber-small.css">
     <link rel="stylesheet" href="css/chamber-larger.css">
 
-    
-    
+
+
     <script src="js/navigation.js" defer></script>
     <script src="js/date.js" defer></script>
+    <script src="js/weather.js"></script>
+    <script src="js/spotlight.js"></script>
 
-    
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -40,16 +42,16 @@
         <!-- hamburger icon for small screens -->
         <button id="menu" aria-label="Open navigation menu" aria-expanded="false">☰</button>
 
-        
-            <nav id="navMenu">
-                
-                <a href="index.html">Home</a>
-                <a href="discover.html">Discover</a>
-                <a href="directory.html">Directory</a>
-                <a href="join.html">Join</a>
-                <a href="thankyou.html">Thank You</a>
-            
-            </nav>
+
+        <nav id="navMenu">
+
+            <a href="index.html">Home</a>
+            <a href="discover.html">Discover</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+            <a href="thankyou.html">Thank You</a>
+
+        </nav>
     </header>
 
     <main>
@@ -63,7 +65,12 @@
             <div class="hero-text">
                 <h1>Welcome to the Sandy Business Chamber of Commerce</h1>
                 <p>Supporting local businesses, entrepreneurs, and residents in Sandy City.</p>
+
+                <!-- CTA BUTTON GOES RIGHT HERE -->
+                <a class="cta-button" href="join.html">Join the Chamber</a>
+
             </div>
+
         </section>
 
         <section class="branding-box">
@@ -72,6 +79,48 @@
             <p>We are committed to fostering a vibrant and supportive business environment in Sandy City.</p>
 
         </section>
+
+        <section class="events">
+            <h2>Upcoming Events</h2>
+
+            <ul>
+                <li>
+                    <strong>Business Networking Breakfast</strong><br>
+                    July 18, 2026 – Sandy City Hall
+                </li>
+
+                <li>
+                    <strong>Small Business Workshop</strong><br>
+                    July 25, 2026 – Chamber Conference Center
+                </li>
+
+                <li>
+                    <strong>Community Market Day</strong><br>
+                    August 3, 2026 – Sandy Park Pavilion
+                </li>
+            </ul>
+        </section>
+
+        <section class="weather">
+            <h2>Weather</h2>
+
+            <div id="current-weather">
+                <p>Loading current weather...</p>
+            </div>
+
+            <div id="forecast">
+                <p>Loading 3‑day forecast...</p>
+            </div>
+        </section>
+
+
+        <section class="spotlights">
+            <h2>Member Spotlights</h2>
+            <div id="spotlight-container">
+                <p>Loading spotlight members...</p>
+            </div>
+        </section>
+
 
 
         <section class="contact">
@@ -123,8 +172,9 @@
             </div>
         </div>
 
-        <p>&copy; <span id="CurrentYear"></span> Maria Khosla. | Utah. USA | All rights reserved</p>
+        <p>&copy; <span id="Year"></span> Maria D. Khosla. | Utah. USA | All rights reserved</p>
         <p>Last Modified: <span id="lastModified"></span></p>
+
 
 
     </footer>

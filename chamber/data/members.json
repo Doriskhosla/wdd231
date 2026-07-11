@@ -1,0 +1,65 @@
+[
+    {
+        "name": "Mountain View Printing",
+        "address": "123 Canyon Rd, Sandy, UT",
+        "phone": "801-555-1234",
+        "website": "https://mountainviewprinting.com",
+        "image": "printing.jpg",
+        "membershipLevel": 3,
+        "description": "Local print shop offering business cards, banners, and promotional materials."
+    },
+    {
+        "name": "Canyon Coffee Roasters",
+        "address": "456 Main St, Sandy, UT",
+        "phone": "801-555-5678",
+        "website": "https://canyoncoffee.com",
+        "image": "coffee.jpg",
+        "membershipLevel": 2,
+        "description": "Small-batch coffee roaster with a cozy café atmosphere."
+    },
+    {
+        "name": "Wasatch Fitness Center",
+        "address": "789 Fitness Way, Sandy, UT",
+        "phone": "801-555-2468",
+        "website": "https://wasatchfitness.com",
+        "image": "fitness.jpg",
+        "membershipLevel": 1,
+        "description": "Community gym offering classes, personal training, and wellness programs."
+    },
+    {
+        "name": "Sandy Floral Boutique",
+        "address": "321 Blossom Ave, Sandy, UT",
+        "phone": "801-555-9876",
+        "website": "https://sandyfloral.com",
+        "image": "floral.jpg",
+        "membershipLevel": 3,
+        "description": "Family-owned flower shop specializing in custom arrangements."
+    },
+    {
+        "name": "Summit Tech Solutions",
+        "address": "654 Innovation Dr, Sandy, UT",
+        "phone": "801-555-1122",
+        "website": "https://summittech.com",
+        "image": "tech.jpg",
+        "membershipLevel": 2,
+        "description": "IT consulting and software development for small businesses."
+    },
+    {
+        "name": "Utah Outdoor Gear",
+        "address": "987 Adventure Ln, Sandy, UT",
+        "phone": "801-555-3344",
+        "website": "https://utahoutdoorgear.com",
+        "image": "outdoor.jpg",
+        "membershipLevel": 1,
+        "description": "Outdoor equipment retailer offering camping, hiking, and climbing gear."
+    },
+    {
+        "name": "Sandy Auto Repair",
+        "address": "159 Mechanic St, Sandy, UT",
+        "phone": "801-555-7788",
+        "website": "https://sandyautorepair.com",
+        "image": "auto.jpg",
+        "membershipLevel": 3,
+        "description": "Full-service auto repair shop specializing in diagnostics and maintenance."
+    }
+]
