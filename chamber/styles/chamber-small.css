@@ -185,9 +185,9 @@ header,
     display: inline-block;
     margin-top: 1rem;
     padding: 0.75rem 1.5rem;
-    background-color: #d4a017;
+    background-color: #f0f1ea;
     /* CHANGE THIS COLOR */
-    color: white;
+    color: rgba(2, 0, 12, 0.932);
     font-size: 1.2rem;
     border-radius: 8px;
     text-decoration: none;
@@ -195,7 +195,7 @@ header,
 }
 
 .cta-button:hover {
-    background-color: #b58910;
+    background-color: #39a190;
     /* slightly darker hover */
 }
 
