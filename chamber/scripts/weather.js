@@ -1,5 +1,5 @@
 
-const apiKey = "8dd595c2cde56236dc6d0547dc63e0ec"; 
+const apiKey = "8dd595c2cde56236dc6d0547dc63e0ec";
 const lat = 40.564978; // Sandy City latitude
 const lon = -111.838972; // Sandy City longitude
 
