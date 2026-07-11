@@ -304,7 +304,7 @@ footer p {
 }
 
 .events {
-    background-color: #f5f5f5;
+    background-color: #cab6b6;
     padding: 1.5rem;
     margin: 2rem 0;
     border-radius: 10px;
@@ -314,7 +314,7 @@ footer p {
     text-align: center;
     margin-bottom: 1rem;
     font-size: 1.8rem;
-    color: #112941;
+    color: #0f171f;
 }
 
 .events ul {
@@ -323,15 +323,15 @@ footer p {
 }
 
 .events li {
-    background: white;
+    background: rgb(189, 195, 209);
     padding: 1rem;
     margin-bottom: 1rem;
     border-radius: 8px;
-    border-left: 5px solid #112941;
+    border-left: 5px solid #ac7da8;
 }
 
 .weather {
-    background-color: #eef4f8;
+    background-color: #638094;
     padding: 1.5rem;
     margin: 2rem 0;
     border-radius: 10px;
@@ -341,12 +341,12 @@ footer p {
     text-align: center;
     margin-bottom: 1rem;
     font-size: 1.8rem;
-    color: #112941;
+    color: #010407;
 }
 
 #current-weather,
 #forecast {
-    background: white;
+    background: rgb(195, 198, 207);
     padding: 1rem;
     margin-bottom: 1rem;
     border-radius: 8px;
@@ -354,7 +354,7 @@ footer p {
 }
 
 .spotlights {
-    background-color: #f5f5f5;
+    background-color: #bccac8;
     padding: 1.5rem;
     margin: 2rem 0;
     border-radius: 10px;
