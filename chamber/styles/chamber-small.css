@@ -299,8 +299,10 @@ footer p {
 
 .member-card img {
     width: 100%;
-    height: auto;
+    height: 150px; /*LIMITS the height */
+    object-fit: cover; /* keeps the image looking good */
     border-radius: 6px;
+    display: block;
 }
 
 .events {

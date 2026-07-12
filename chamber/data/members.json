@@ -4,7 +4,7 @@
         "address": "650 West Sandy Parkway, Sandy, UT",
         "phone": "801-948-9421",
         "website": "https://ADVANCEDPROMOTIONS-SLC.COM",
-        "image": "printing.jpg",
+        "image": "peter.jpg",
         "membershipLevel": 3,
         "description": "Local print shop offering business cards, banners, and promotional materials."
     },
@@ -13,7 +13,7 @@
         "address": "456 Main St, Sandy, UT",
         "phone": "801-555-5678",
         "website": "https://canyoncoffee.com",
-        "image": "coffee.jpg",
+        "image": "bestcoffe.jpg",
         "membershipLevel": 2,
         "description": "Small-batch coffee roaster with a cozy café atmosphere."
     },
@@ -58,7 +58,7 @@
         "address": "159 Mechanic St, Sandy, UT",
         "phone": "801-555-7788",
         "website": "https://sandyautorepair.com",
-        "image": "auto.jpg",
+        "image": "utorepair.jpg",
         "membershipLevel": 3,
         "description": "Full-service auto repair shop specializing in diagnostics and maintenance."
     }
