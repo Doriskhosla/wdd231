@@ -15,23 +15,25 @@ function displayMembers(members) {
     members.forEach(member => {
         const card = document.createElement("section");
         card.classList.add("member-card");
-
         card.innerHTML = `
-            <img src="images/${member.image}" 
-               alt="${member.name}" 
-               width="120" 
-               height="120" 
-               loading="lazy">
+    <img src="images/${member.image}"
+         alt="${member.name}" 
+         width="120" 
+         height="120"
+         loading="lazy">
 
-           
-           <div class="member-info"> 
-              <h3>${member.name}</h3>
-              <p>${member.address}</p>
-              <p>${member.phone}</p>
-              <a href="${member.website}" target="_blank">Visit Website</a>
-              <p class="level">Membership Level: ${member.membershipLevel}</p>
-           </div>
-        `;
+    <div class="member-info"> 
+        <h3>${member.name}</h3>
+        <p>${member.address}</p>
+        <p>${member.phone}</p>
+        <a href="${member.website}" target="_blank">Visit Website</a>
+        <p class="level">Membership Level: ${member.membershipLevel}</p>
+    </div>
+`;
+
+
+
+
 
         container.appendChild(card);
     });
