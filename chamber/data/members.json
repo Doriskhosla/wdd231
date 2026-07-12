@@ -51,14 +51,14 @@
         "website": "https://utahoutdoorgear.com",
         "image": "outdoor.jpg",
         "membershipLevel": 1,
-        "description": "Outdoor equipment retailer offering camping, hiking, and climbing gear."
+        "description": "outdoor equipment retailer offering camping, hiking, and climbing gear."
     },
     {
         "name": "Sandy Auto Repair",
         "address": "159 Mechanic St, Sandy, UT",
         "phone": "801-555-7788",
         "website": "https://sandyautorepair.com",
-        "image": "utorepair.jpg",
+        "image": "autorepair.jpg",
         "membershipLevel": 3,
         "description": "Full-service auto repair shop specializing in diagnostics and maintenance."
     }
