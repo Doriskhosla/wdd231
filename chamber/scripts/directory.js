@@ -19,7 +19,7 @@ function displayMembers(members) {
         const isFirst = index === 0; // first card
 
         card.innerHTML = `
-            <img src="images/${member.image}"
+            <img src="images/${member.image}">
                  alt="${member.name}" 
                  width="120" 
                  height="120"
