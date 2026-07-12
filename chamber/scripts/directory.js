@@ -12,32 +12,34 @@ async function getMembers() {
 function displayMembers(members) {
     container.innerHTML = "";
 
-    members.forEach(member => {
+    members.forEach((member, index) => {
         const card = document.createElement("section");
         card.classList.add("member-card");
+
+        const isFirst = index === 0; // first card
+
         card.innerHTML = `
-    <img src="images/${member.image}"
-         alt="${member.name}" 
-         width="120" 
-         height="120"
-         loading="lazy">
+            <img src="images/${member.image}"
+                 alt="${member.name}" 
+                 width="120" 
+                 height="120"
+                 ${isFirst ? 'fetchpriority="high"' : 'loading="lazy"'}>
 
-    <div class="member-info"> 
-        <h3>${member.name}</h3>
-        <p>${member.address}</p>
-        <p>${member.phone}</p>
-        <a href="${member.website}" target="_blank">Visit Website</a>
-        <p class="level">Membership Level: ${member.membershipLevel}</p>
-    </div>
-`;
-
-
-
-
+            <div class="member-info"> 
+                <h3>${member.name}</h3>
+                <p>${member.address}</p>
+                <p>${member.phone}</p>
+                <a href="${member.website}" target="_blank">Visit Website</a>
+                <p class="level">Membership Level: ${member.membershipLevel}</p>
+            </div>
+        `;
 
         container.appendChild(card);
     });
 }
+
+
+container.appendChild(card);
 
 gridBtn.addEventListener("click", () => {
     container.classList.add("grid");
