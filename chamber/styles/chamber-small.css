@@ -307,6 +307,10 @@ footer p {
     background-color: hsl(260, 8%, 38%);
 }
 
+#directory-container {
+    min-height: 400px;
+}
+
 
 #directory-container.grid {
     display: grid;
@@ -316,6 +320,7 @@ footer p {
 
 #directory-container.list {
     display: block;
+    min-height: 400px;
 }
 
 .member-card {
@@ -418,7 +423,9 @@ footer p {
 }
 
 .spotlight-card img {
-    max-width: 120px;
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
     display: block;
     margin: 0 auto 1rem;
 }
