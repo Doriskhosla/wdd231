@@ -44,15 +44,8 @@
         "membershipLevel": 2,
         "description": "IT consulting and software development for small businesses."
     },
-    {
-        "name": "Utah Outdoor Gear",
-        "address": "987 Adventure Ln, Sandy, UT",
-        "phone": "801-555-3344",
-        "website": "https://utahoutdoorgear.com",
-        "image": "outdoor.jpg",
-        "membershipLevel": 1,
-        "description": "Outdoor equipment retailer offering camping, hiking, and climbing gear."
-    },
+    
+    
     {
         "name": "Sandy Auto Repair",
         "address": "159 Mechanic St, Sandy, UT",
