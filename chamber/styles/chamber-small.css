@@ -279,10 +279,39 @@ footer p {
     height: 30px;
 }
 
+.view-buttons {
+    display: flex;
+    justify-content: center;
+    /* centers the buttons */
+    gap: 1rem;
+    /* space between buttons */
+    margin: 1.5rem auto;
+    /* space above and below */
+    padding: 1rem;
+    /* optional: gives the container breathing room */
+    max-width: 400px;
+    /* keeps the container neat */
+}
+
+.view-buttons button {
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    background-color: #b9c5c5;
+    color: rgb(19, 10, 10);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.view-buttons button:hover {
+    background-color: hsl(260, 8%, 38%);
+}
+
+
 #directory-container.grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-    gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5rem;
 }
 
 #directory-container.list {
@@ -294,15 +323,21 @@ footer p {
     border: 1px solid #4919b9;
     border-radius: 8px;
     background: rgb(231, 210, 238);
-    text-align: center;
+    text-align: left;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
 }
 
 .member-card img {
-    width: 100%;
-    height: 150px; /*LIMITS the height */
-    object-fit: cover; /* keeps the image looking good */
-    border-radius: 6px;
-    display: block;
+    width: 120px;
+    height: 120px;
+}
+
+.member-info {
+    flex: 1;
+    min-width: 0;
+    text-align: left;
 }
 
 .events {

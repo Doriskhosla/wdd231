@@ -17,12 +17,15 @@ function displayMembers(members) {
         card.classList.add("member-card");
 
         card.innerHTML = `
-            <img src="images/${member.image}" alt="${member.name}">
-            <h3>${member.name}</h3>
-            <p>${member.address}</p>
-            <p>${member.phone}</p>
-            <a href="${member.website}" target="_blank">Visit Website</a>
-            <p class="level">Membership Level: ${member.membershipLevel}</p>
+          <img src="images/${member.image}" alt="${member.name}" width="120" height="120">  
+           
+           <div class="member-info"> 
+              <h3>${member.name}</h3>
+              <p>${member.address}</p>
+              <p>${member.phone}</p>
+              <a href="${member.website}" target="_blank">Visit Website</a>
+              <p class="level">Membership Level: ${member.membershipLevel}</p>
+           </div>
         `;
 
         container.appendChild(card);
