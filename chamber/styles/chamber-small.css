@@ -189,7 +189,8 @@
     font-size: 2rem;
     background: none;
     border: none;
-    color: white;
+    color: #112941;
+    /* FIXED */
     cursor: pointer;
 }
 
@@ -228,7 +229,7 @@
     display: inline-block;
     margin-top: 1rem;
     padding: 0.75rem 1.5rem;
-    background-color: #f0f1ea;
+    background-color: #e7e9df;
     /* CHANGE THIS COLOR */
     color: rgba(2, 0, 12, 0.932);
     font-size: 1.2rem;
@@ -277,6 +278,7 @@
     background: none;
     border: none;
 }
+
 footer {
     background-color: #adc4ce;
     padding: 1.5rem;
