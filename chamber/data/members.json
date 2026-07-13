@@ -44,8 +44,6 @@
         "membershipLevel": 2,
         "description": "IT consulting and software development for small businesses."
     },
-    
-    
     {
         "name": "Sandy Auto Repair",
         "address": "159 Mechanic St, Sandy, UT",
@@ -54,5 +52,14 @@
         "image": "car.webp",
         "membershipLevel": 3,
         "description": "Full-service auto repair shop specializing in diagnostics and maintenance."
-    }
+    },
+  {
+    "name": "Mountain View Bookstore",
+    "address": "245 Library Lane, Sandy, UT",
+    "phone": "801-555-3344",
+    "website": "https://mountainviewbooks.example.com",
+    "image": "bookstore.webp",
+    "membership": 1,
+    "description": "Local bookstore offering new releases, community events, and reading clubs."
+  }
 ]
