@@ -14,40 +14,57 @@
     <meta property="og:description"
         content="Explore the Sandy City Chamber Business Directory to find trusted local companies, services, and organizations that support our community.">
 
-    <meta property="og:image" content="https://doriskhosla.github.io/wdd231/chamber/images/sandycity.jpg">
+    <meta property="og:image" content="https://doriskhosla.github.io/wdd231/chamber/images/sandycity.webp">
 
     <meta property="og:url" content="https://doriskhosla.github.io/wdd231/chamber/directory.html">
 
     <link rel="icon" href="images/favicon.ico">
 
+    <!-- Preload CSS -->
+    <link rel="preload" href="styles/normalize.css" as="style">
+    <link rel="preload" href="styles/chamber-small.css" as="style">
+    <link rel="preload" href="styles/chamber-larger.css" as="style">
 
+    <!-- Load CSS -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/chamber-small.css">
     <link rel="stylesheet" href="styles/chamber-larger.css">
 
-    <script src="scripts/navigation.js" defer></script>
-    <script src="scripts/date.js" defer></script>
-    <script src="scripts/directory.js" defer></script>
+    <head>
+        <!-- CSS links here -->
+
+        <script src="scripts/navigation.js" defer></script>
+        <script src="scripts/date.js" defer></script>
+        <script src="scripts/directory.js" defer></script>
+    </head>
 
 
 
+    <!-- Preload Google Fonts -->
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap"
+        as="style">
+
+    <!-- Preconnect -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
+    <!-- Load Google Fonts -->
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap"
         rel="stylesheet">
+
 </head>
 
 <body>
-
-    <header class="site-header">
+    <header>
         <div class="logo">
-            <img src="images/sandycity26.svg" alt="Site Logo" width="120" height="60">
+            <img src="images/sandycity26.svg" alt="Sandy Chamber Logo">
+            <h1>Sandy Chamber of Commerce</h1>
         </div>
 
-        <button id="menu" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+        <button id="menu" aria-label="Menu"></button>
 
-        <nav id="navMenu">
+        <nav class="navigation">
             <a href="index.html">Home</a>
             <a href="discover.html">Discover</a>
             <a href="directory.html" class="active">Directory</a>
@@ -55,6 +72,8 @@
             <a href="thankyou.html">Thank You</a>
         </nav>
     </header>
+
+
 
     <main>
 

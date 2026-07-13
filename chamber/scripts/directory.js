@@ -1,12 +1,16 @@
-const url = "data/members.json";
 const container = document.querySelector("#directory-container");
 const gridBtn = document.querySelector("#gridBtn");
 const listBtn = document.querySelector("#listBtn");
 
 async function getMembers() {
-    const response = await fetch(url);
-    const data = await response.json();
-    displayMembers(data);
+    try {
+        const response = await fetch("data/members.json");
+        const members = await response.json();
+        displayMembers(members);
+    } catch (error) {
+        console.error("Error loading members:", error);
+        container.innerHTML = "<p>Unable to load directory.</p>";
+    }
 }
 
 function displayMembers(members) {
@@ -16,16 +20,16 @@ function displayMembers(members) {
         const card = document.createElement("section");
         card.classList.add("member-card");
 
-        const isFirst = index === 0; // first card
+        const isFirst = index === 0; // first card gets fetchpriority
 
         card.innerHTML = `
-            <img src="images/${member.image}">
+            <img src="images/${member.image}" 
                  alt="${member.name}" 
                  width="120" 
                  height="120"
                  ${isFirst ? 'fetchpriority="high"' : 'loading="lazy"'}>
 
-            <div class="member-info"> 
+            <div class="member-info">
                 <h3>${member.name}</h3>
                 <p>${member.address}</p>
                 <p>${member.phone}</p>
@@ -38,9 +42,7 @@ function displayMembers(members) {
     });
 }
 
-
-container.appendChild(card);
-
+// GRID / LIST BUTTONS
 gridBtn.addEventListener("click", () => {
     container.classList.add("grid");
     container.classList.remove("list");
@@ -51,4 +53,5 @@ listBtn.addEventListener("click", () => {
     container.classList.remove("grid");
 });
 
+// START
 getMembers();
