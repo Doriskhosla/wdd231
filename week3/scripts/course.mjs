@@ -1,9 +1,9 @@
 const byuiCourse = {
     title: "Web Frontend Development I<br>WDD 231",
     sections: [
-        { sectionNumber: 1, enrolled: 20, instructor: "Brother Bingham" },
-        { sectionNumber: 2, enrolled: 18, instructor: "Sister Shultz" },
-        { sectionNumber: 3, enrolled: 25, instructor: "Sister Smith" }
+        { sectionNumber: 1, enrolled: 20, instructor: "Brother Standley" },
+        { sectionNumber: 2, enrolled: 18, instructor: "Jaren Lamprecht" },
+        { sectionNumber: 3, enrolled: 25, instructor: "Sister Kim Daley " }
     ],
 
     changeEnrollment(sectionNum, add = true) {
