@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: #f7f7f7;
+    color: #020202;
+}
+
+/* Controls container */
+.controls-container {
+    background: rgb(118, 180, 238);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(24, 7, 7, 0.1);
+    margin-bottom: 2rem;
+}
+
+.controls-container label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.controls-container select {
+    width: 100%;
+    padding: 0.6rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.buttons button {
+    flex: 1;
+    padding: 0.7rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    background: #0d59aa;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.buttons button:hover {
+    background: #021830;
+}
+
+/* Page title */
+h1 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    text-align: center;
+
+}
+
+/* Sections output container */
+#sectionsOutput {
+    background: rgb(231, 223, 223);
+    padding: 1rem;
+    border-radius: 6px;
+    box-shadow: 0 0 5px rgba(12, 0, 0, 0.1);
+}
+
+/* Section rows (3-column layout) */
+.section-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.header-row {
+    font-weight: bold;
+    background: #9abce7;
+    
+}
+
+.section-row span {
+    padding: 0.2rem 0;
+}
