@@ -53,17 +53,26 @@
 
 
 <body>
+
     <header class="top-bar">
 
         <div class="branding-box">
 
             <div class="brand-left">
                 <img src="images/sandycity26.svg" alt="Sandy Chamber Logo" width="120" height="60">
-                <p class="site-title"> Chamber of Commerce</p>
+                <p class="site-title">Sandy Chamber of Commerce</p>
             </div>
-            <div class="brand-right">
-                <button id="menu">☰</button>
 
+            <div class="brand-right">
+
+                <!-- Hamburger Menu Button -->
+                <button id="menu-button" aria-label="Open navigation menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+
+                <!-- Navigation Menu -->
                 <nav class="navigation">
                     <a href="index.html">Home</a>
                     <a href="discover.html">Discover</a>
@@ -71,12 +80,11 @@
                     <a href="join.html">Join</a>
                     <a href="thankyou.html">Thank You</a>
                 </nav>
+
             </div>
         </div>
 
     </header>
-
-
 
 
     <main>

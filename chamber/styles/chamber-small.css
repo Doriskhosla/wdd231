@@ -279,6 +279,23 @@
     border: none;
 }
 
+#menu-button .bar {
+    transition: 0.3s;
+}
+
+#menu-button.open .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+#menu-button.open .bar:nth-child(2) {
+    opacity: 0;
+}
+
+#menu-button.open .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+
 footer {
     background-color: #adc4ce;
     padding: 1.5rem;
