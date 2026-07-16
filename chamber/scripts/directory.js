@@ -5,7 +5,9 @@ const listBtn = document.querySelector("#listBtn");
 async function getMembers() {
     try {
         const response = await fetch("data/members.json");
-        const members = await response.json();
+        const data = await response.json();
+
+        const members = data.members;   
 
         members.sort((a, b) => b.membershipLevel - a.membershipLevel);
 
@@ -15,6 +17,7 @@ async function getMembers() {
         container.innerHTML = "<p>Unable to load directory.</p>";
     }
 }
+
 
 function displayMembers(members) {
     container.innerHTML = "";
@@ -26,21 +29,22 @@ function displayMembers(members) {
         const isFirst = index === 0; // first card gets fetchpriority
 
         card.innerHTML = `
-        <img src="images/${member.image}" 
-             alt="${member.name}" 
-             width="120" 
-             height="120"
-             ${isFirst ? 'fetchpriority="high" loading="eager"' : ''}>
+    <img src="${member.image}" 
+         alt="${member.name}" 
+         width="120" 
+         height="120"
+         ${isFirst ? 'fetchpriority="high" loading="eager"' : ''}>
 
-        <div class="member-info">
-            <h3>${member.name}</h3>
-            <p>${member.address}</p>
-            <p>${member.phone}</p>
-            <a href="${member.website}" target="_blank">Visit Website</a>
-            <p class="level">Membership Level: ${member.membershipLevel}</p>
-        </div>
-    `;
-    
+    <div class="member-info">
+        <h3>${member.name}</h3>
+        <p>${member.address}</p>
+        <p>${member.phone}</p>
+        <a href="${member.website}" target="_blank">Visit Website</a>
+        <p class="level">Membership Level: ${member.membershipLevel}</p>
+    </div>
+`;
+
+
         container.appendChild(card);
     });
 }

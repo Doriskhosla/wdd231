@@ -448,20 +448,36 @@ footer {
     border-left: 5px solid #2c1e2b;
 }
 
+/* Weather Section Layout */
 .weather {
-    background-color: #638094;
-    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    /* stack title above card */
+    align-items: flex-end;
+    /* card stays on the right */
     margin: 2rem 0;
-    border-radius: 10px;
 }
 
-.weather h2 {
+/* Title centered across the page */
+.weather-title h2 {
     text-align: center;
+    width: 100%;
+    /* makes the title span full width */
     margin-bottom: 1rem;
     font-size: 1.8rem;
     color: #010407;
 }
 
+/* Weather Card */
+.weather-card {
+    background-color: #638094;
+    padding: 1.5rem;
+    border-radius: 10px;
+    width: 260px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Current Weather + Forecast Boxes */
 #current-weather,
 #forecast {
     background: rgb(195, 198, 207);
@@ -469,6 +485,13 @@ footer {
     margin-bottom: 1rem;
     border-radius: 8px;
     border-left: 5px solid #112941;
+}
+
+/* Weather Icon */
+#weather-icon {
+    width: 70px;
+    height: 70px;
+    margin-top: 0.5rem;
 }
 
 .spotlights {

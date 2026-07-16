@@ -1,65 +1,67 @@
-[
-    {
-        "name": "Advanced Promotions SLC",
-        "address": "650 West Sandy Parkway, Sandy, UT",
-        "phone": "801-948-9421",
-        "website": "https://ADVANCEDPROMOTIONS-SLC.COM",
-        "image": "peter.webp",
-        "membershipLevel": 3,
-        "description": "Local print shop offering business cards, banners, and promotional materials."
-    },
-    {
-        "name": "Canyon Coffee Roasters",
-        "address": "456 Main St, Sandy, UT",
-        "phone": "801-555-5678",
-        "website": "https://canyoncoffee.com",
-        "image": "bestcoffe.webp",
-        "membershipLevel": 2,
-        "description": "Small-batch coffee roaster with a cozy café atmosphere."
-    },
-    {
-        "name": "Wasatch Fitness Center",
-        "address": "789 Fitness Way, Sandy, UT",
-        "phone": "801-555-2468",
-        "website": "https://wasatchfitness.com",
-        "image": "fitness.webp",
-        "membershipLevel": 1,
-        "description": "Community gym offering classes, personal training, and wellness programs."
-    },
-    {
-        "name": "Sandy Floral Boutique",
-        "address": "321 Blossom Ave, Sandy, UT",
-        "phone": "801-555-9876",
-        "website": "https://sandyfloral.com",
-        "image": "floral.webp",
-        "membershipLevel": 3,
-        "description": "Family-owned flower shop specializing in custom arrangements."
-    },
-    {
-        "name": "Summit Tech Solutions",
-        "address": "654 Innovation Dr, Sandy, UT",
-        "phone": "801-555-1122",
-        "website": "https://summittech.com",
-        "image": "tech.webp",
-        "membershipLevel": 2,
-        "description": "IT consulting and software development for small businesses."
-    },
-    {
-        "name": "Sandy Auto Repair",
-        "address": "159 Mechanic St, Sandy, UT",
-        "phone": "801-555-7788",
-        "website": "https://sandyautorepair.com",
-        "image": "car.webp",
-        "membershipLevel": 3,
-        "description": "Full-service auto repair shop specializing in diagnostics and maintenance."
-    },
-    {
-        "name": "Mountain View Bookstore",
-        "address": "245 Library Lane, Sandy, UT",
-        "phone": "801-555-3344",
-        "website": "https://mountainviewbooks.example.com",
-        "image": "bookstore.webp",
-        "membershipLevel": 1,
-        "description": "Local bookstore offering new releases, community events, and reading clubs."
-    }
-]
+{
+    "members": [
+        {
+            "name": "Advanced Promotions SLC",
+            "address": "650 West Sandy Parkway, Sandy, UT",
+            "phone": "801-948-9421",
+            "website": "https://ADVANCEDPROMOTIONS-SLC.COM",
+            "image": "images/peter.webp",
+            "membershipLevel": 3,
+            "description": "Local print shop offering business cards, banners, and promotional materials."
+        },
+        {
+            "name": "Canyon Coffee Roasters",
+            "address": "456 Main St, Sandy, UT",
+            "phone": "801-555-5678",
+            "website": "https://canyoncoffee.com",
+            "image": "images/bestcoffe.webp",
+            "membershipLevel": 2,
+            "description": "Small-batch coffee roaster with a cozy café atmosphere."
+        },
+        {
+            "name": "Wasatch Fitness Center",
+            "address": "789 Fitness Way, Sandy, UT",
+            "phone": "801-555-2468",
+            "website": "https://wasatchfitness.com",
+            "image": "images/fitness.webp",
+            "membershipLevel": 1,
+            "description": "Community gym offering classes, personal training, and wellness programs."
+        },
+        {
+            "name": "Sandy Floral Boutique",
+            "address": "321 Blossom Ave, Sandy, UT",
+            "phone": "801-555-9876",
+            "website": "https://sandyfloral.com",
+            "image": "images/floral.webp",
+            "membershipLevel": 3,
+            "description": "Family-owned flower shop specializing in custom arrangements."
+        },
+        {
+            "name": "Summit Tech Solutions",
+            "address": "654 Innovation Dr, Sandy, UT",
+            "phone": "801-555-1122",
+            "website": "https://summittech.com",
+            "image": "images/tech.webp",
+            "membershipLevel": 2,
+            "description": "IT consulting and software development for small businesses."
+        },
+        {
+            "name": "Sandy Auto Repair",
+            "address": "159 Mechanic St, Sandy, UT",
+            "phone": "801-555-7788",
+            "website": "https://sandyautorepair.com",
+            "image": "images/car.webp",
+            "membershipLevel": 3,
+            "description": "Full-service auto repair shop specializing in diagnostics and maintenance."
+        },
+        {
+            "name": "Mountain View Bookstore",
+            "address": "245 Library Lane, Sandy, UT",
+            "phone": "801-555-3344",
+            "website": "https://mountainviewbooks.example.com",
+            "image": "images/bookstore.webp",
+            "membershipLevel": 1,
+            "description": "Local bookstore offering new releases, community events, and reading clubs."
+        }
+    ]
+}
