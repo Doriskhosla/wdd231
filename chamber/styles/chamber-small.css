@@ -147,11 +147,11 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: rgb(248, 241, 241);
+    color: rgb(0, 0, 0);
     max-width: 700px;
     padding: 2rem;
     border-radius: 15px;
-    text-shadow: 2px 2px 8px rgba(46, 37, 37, 0.8);
+    text-shadow: 2px 2px 8px rgb(248, 254, 255);
     text-align: center;
     width: 70%;
 }
@@ -159,7 +159,7 @@
 .site-title {
     font-size: 1.4rem;
     font-weight: 700;
-    color: #294a6b;
+    color: #0b0f13;
     margin: 0;
 
 }
@@ -168,7 +168,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #d6e1ec;
+    background-color: #bbc6d1;
     padding: 1rem 1.5rem;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(71, 30, 30, 0.25);
@@ -195,7 +195,7 @@
     font-size: 2rem;
     background: none;
     border: none;
-    color: #193755;
+    color: #0c1925;
     /* FIXED */
     cursor: pointer;
 }
@@ -211,7 +211,7 @@
     font-weight: 700;
     margin: 0;
 
-    color: rgb(14, 13, 13);
+    color: rgb(32, 27, 27);
 }
 
 .directory header {
@@ -495,7 +495,7 @@ footer {
     /* makes the title span full width */
     margin-bottom: 3rem;
     font-size: 1.8rem;
-    color: #6f7e8d;
+    color: #3e566e;
 }
 
 
@@ -510,7 +510,7 @@ footer {
 
 /* Weather Card */
 .weather-card {
-    background-color: #638094;
+    background-color: #5f7888;
     padding: 1.5rem;
     border-radius: 15px;
     width: 300px;
@@ -528,7 +528,7 @@ footer {
 /* Current Weather + Forecast Boxes */
 #current-weather,
 #forecast {
-    background: rgb(195, 198, 207);
+    background: rgb(227, 229, 235);
     padding: 1rem;
     margin-bottom: 1rem;
     border-radius: 8px;
