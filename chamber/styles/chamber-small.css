@@ -495,7 +495,7 @@ footer {
     /* makes the title span full width */
     margin-bottom: 3rem;
     font-size: 1.8rem;
-    color: #3e566e;
+    color: #e4e5e6;
 }
 
 
@@ -510,7 +510,7 @@ footer {
 
 /* Weather Card */
 .weather-card {
-    background-color: #5f7888;
+    background-color: #5c90b1;
     padding: 1.5rem;
     border-radius: 15px;
     width: 300px;
