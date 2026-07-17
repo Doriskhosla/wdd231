@@ -6,7 +6,7 @@
             "phone": "801-948-9421",
             "website": "https://ADVANCEDPROMOTIONS-SLC.COM",
             "image": "images/peter.webp",
-            "membershipLevel": 3,
+            "membership": "Gold",
             "description": "Local print shop offering business cards, banners, and promotional materials."
         },
         {
@@ -15,7 +15,7 @@
             "phone": "801-555-5678",
             "website": "https://canyoncoffee.com",
             "image": "images/bestcoffe.webp",
-            "membershipLevel": 2,
+            "membership": "Silver",
             "description": "Small-batch coffee roaster with a cozy café atmosphere."
         },
         {
@@ -24,7 +24,7 @@
             "phone": "801-555-2468",
             "website": "https://wasatchfitness.com",
             "image": "images/fitness.webp",
-            "membershipLevel": 1,
+            "membership": "Bronze",
             "description": "Community gym offering classes, personal training, and wellness programs."
         },
         {
@@ -33,7 +33,7 @@
             "phone": "801-555-9876",
             "website": "https://sandyfloral.com",
             "image": "images/floral.webp",
-            "membershipLevel": 3,
+            "membership": "Gold",
             "description": "Family-owned flower shop specializing in custom arrangements."
         },
         {
@@ -42,7 +42,7 @@
             "phone": "801-555-1122",
             "website": "https://summittech.com",
             "image": "images/tech.webp",
-            "membershipLevel": 2,
+            "membership": "Silver",
             "description": "IT consulting and software development for small businesses."
         },
         {
@@ -51,7 +51,7 @@
             "phone": "801-555-7788",
             "website": "https://sandyautorepair.com",
             "image": "images/car.webp",
-            "membershipLevel": 3,
+            "membership": "Gold",
             "description": "Full-service auto repair shop specializing in diagnostics and maintenance."
         },
         {
@@ -60,7 +60,7 @@
             "phone": "801-555-3344",
             "website": "https://mountainviewbooks.example.com",
             "image": "images/bookstore.webp",
-            "membershipLevel": 1,
+            "membership": "Bronze",
             "description": "Local bookstore offering new releases, community events, and reading clubs."
         }
     ]
