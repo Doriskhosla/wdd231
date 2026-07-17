@@ -508,13 +508,6 @@ footer {
     margin-top: 7rem;
 }
 
-/* Weather Title */
-.weather-right-box h2 {
-    color: #0f0d0d;
-    text-align: center;
-    margin-bottom: 1rem;
-}
-
 /* Current Weather + Forecast Boxes */
 #current-weather,
 #forecast {
