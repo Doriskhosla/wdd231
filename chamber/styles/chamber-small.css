@@ -488,16 +488,6 @@ footer {
     flex: 1;
 }
 
-/* Title centered across the page */
-.weather-title h2 {
-    text-align: center;
-    width: 100%;
-    /* makes the title span full width */
-    margin-bottom: 3rem;
-    font-size: 1.8rem;
-    color: #e4e5e6;
-}
-
 
 .weather {
     flex: 1;
@@ -520,7 +510,7 @@ footer {
 
 /* Weather Title */
 .weather-right-box h2 {
-    color: #ffffff;
+    color: #0f0d0d;
     text-align: center;
     margin-bottom: 1rem;
 }
