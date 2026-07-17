@@ -489,7 +489,9 @@ footer {
     text-align: center;
 
 }
-
+.sandy-left-box * {
+    color: #ffffff;
+}
 .sandy-left-box h2 {
     color: #ffffff;
     margin-bottom: 0.5rem;
