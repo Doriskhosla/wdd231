@@ -149,7 +149,7 @@
     transform: translate(-50%, -50%);
     color: rgb(0, 0, 0);
     max-width: 700px;
-    padding: 2rem;
+    padding: 1rem;
     border-radius: 15px;
     text-shadow: 2px 2px 8px rgb(248, 254, 255);
     text-align: center;
@@ -457,44 +457,72 @@ footer {
     border-left: 5px solid #2c1e2b;
 }
 
+.sandy-weather-wrapper {
+    display: flex;
+    justify-content: center;
+    /* FIXED */
+    align-items: flex-start;
+    gap: 2rem;
+}
+
 
 .sandy-left-img {
     display: flex;
-    width: 400px;
+    width: 100%;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
 
 }
 
+.sandy-image {
+    position: relative;
+    z-index: 0;
+}
+
 .sandy-left-box {
-    background: #638094;
+    background: #93b5cc;
     padding: 1rem;
     border-radius: 10px;
     box-shadow: 0 2px 6px rgba(63, 59, 59, 0.15);
-    width: 500px;
+    width: 800px;
     text-align: center;
-    margin-top: 10rem;
+
 }
 
 .sandy-left-box h2 {
     color: #6f889b;
     margin-bottom: 0.5rem;
+}
 
-
+.sandy-left-box,
+.weather-card {
+    margin-top: 2rem;
+    /* same spacing for both */
 }
 
 .weather {
     flex: 1;
 }
 
+.container {
+    display: flex;
+    justify-content: space-between;
+    /* or center, depending on layout */
+    align-items: center;
+    /* vertically aligns them */
+    flex-wrap: wrap;
+    /* helps on mobile */
+}
 
 .weather {
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    margin-top: -35rem;
+    margin-top: 0;
+    position: relative;
+    z-index: 5;
 
 }
 
@@ -505,7 +533,11 @@ footer {
     border-radius: 15px;
     width: 300px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    margin-top: 7rem;
+}
+
+.weather-card {
+    position: relative;
+    z-index: 10;
 }
 
 /* Current Weather + Forecast Boxes */
@@ -516,6 +548,13 @@ footer {
     margin-bottom: 1rem;
     border-radius: 8px;
     border-left: 5px solid #112941;
+}
+
+.parent-container {
+    display: flex;
+    align-items: flex-start;
+    /* or center */
+    gap: 2rem;
 }
 
 /* Weather Icon */
@@ -566,4 +605,30 @@ footer {
 .spotlight-card h3 {
     margin-bottom: 0.5rem;
     font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .sandy-weather-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sandy-left-box,
+    .weather {
+        margin-top: 2rem;
+        /* equal spacing */
+    }
+}
+
+@media (max-width: 768px) {
+    .sandy-left-box {
+        width: 100%;
+        max-width: 400px;
+        /* keeps it from being too big */
+    }
+
+    .sandy-left-img {
+        width: 100%;
+        height: auto;
+    }
 }
