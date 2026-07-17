@@ -151,7 +151,7 @@
     max-width: 700px;
     padding: 2rem;
     border-radius: 15px;
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+    text-shadow: 2px 2px 8px rgba(46, 37, 37, 0.8);
     text-align: center;
     width: 70%;
 }
@@ -159,7 +159,7 @@
 .site-title {
     font-size: 1.4rem;
     font-weight: 700;
-    color: #112941;
+    color: #294a6b;
     margin: 0;
 
 }
@@ -195,7 +195,7 @@
     font-size: 2rem;
     background: none;
     border: none;
-    color: #112941;
+    color: #193755;
     /* FIXED */
     cursor: pointer;
 }
@@ -237,7 +237,7 @@
     padding: 0.75rem 1.5rem;
     background-color: #e7e9df;
     /* CHANGE THIS COLOR */
-    color: rgba(2, 0, 12, 0.932);
+    color: rgba(13, 3, 61, 0.932);
     font-size: 1.2rem;
     border-radius: 8px;
     text-decoration: none;
