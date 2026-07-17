@@ -441,7 +441,7 @@ footer {
     text-align: center;
     margin-bottom: 1rem;
     font-size: 1.8rem;
-    color: #0f171f;
+    color: #edf0f3;
 }
 
 .events ul {
@@ -471,14 +471,14 @@ footer {
     background: #638094;
     padding: 1rem;
     border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2px 6px rgba(63, 59, 59, 0.15);
     width: 500px;
     text-align: center;
     margin-top: 10rem;
 }
 
 .sandy-left-box h2 {
-    color: #112941;
+    color: #6f889b;
     margin-bottom: 0.5rem;
 
 
@@ -495,8 +495,9 @@ footer {
     /* makes the title span full width */
     margin-bottom: 3rem;
     font-size: 1.8rem;
-    color: #010407;
+    color: #6f7e8d;
 }
+
 
 .weather {
     flex: 1;
@@ -515,6 +516,13 @@ footer {
     width: 300px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     margin-top: 7rem;
+}
+
+/* Weather Title */
+.weather-right-box h2 {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 1rem;
 }
 
 /* Current Weather + Forecast Boxes */
@@ -545,7 +553,7 @@ footer {
     text-align: center;
     margin-bottom: 1rem;
     font-size: 1.8rem;
-    color: #112941;
+    color: #ebeef1;
 }
 
 #spotlight-container {
@@ -559,7 +567,7 @@ footer {
     background: white;
     padding: 1rem;
     border-radius: 10px;
-    border-left: 4px solid #112941;
+    border-left: 4px solid #192836;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     width: 240px;
     text-align: center;
