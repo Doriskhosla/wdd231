@@ -484,16 +484,16 @@ footer {
     background: #93b5cc;
     padding: 1rem;
     border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(63, 59, 59, 0.15);
+    box-shadow: 0 2px 6px rgba(20, 19, 19, 0.15);
     width: 800px;
     text-align: center;
 
 }
 .sandy-left-box * {
-    color: #ffffff;
+    color: #e9dfdf;
 }
 .sandy-left-box h2 {
-    color: #ffffff;
+    color: #0f0909;
     margin-bottom: 0.5rem;
 }
 
@@ -567,7 +567,7 @@ footer {
 }
 
 .spotlights {
-    background-color: #638094;
+    background-color: #7994a7;
     padding: 1.5rem;
     margin: 2rem 0;
     border-radius: 10px;
@@ -577,7 +577,7 @@ footer {
     text-align: center;
     margin-bottom: 1rem;
     font-size: 1.8rem;
-    color: #ebeef1;
+    color: #0e1318;
 }
 
 #spotlight-container {
