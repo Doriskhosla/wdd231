@@ -115,7 +115,7 @@
     }
 
     #navMenu {
-        display: none;
+
         flex-direction: column;
         gap: 2rem;
         width: 100%;
@@ -289,32 +289,6 @@
     line-height: 1.7;
     color: #1f0e0e;
     font-size: 1.4rem;
-}
-
-#menu {
-    display: none;
-}
-
-#menu-button {
-    font-size: 2rem;
-    background: none;
-    border: none;
-}
-
-#menu-button .bar {
-    transition: 0.3s;
-}
-
-#menu-button.open .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-}
-
-#menu-button.open .bar:nth-child(2) {
-    opacity: 0;
-}
-
-#menu-button.open .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
 }
 
 
