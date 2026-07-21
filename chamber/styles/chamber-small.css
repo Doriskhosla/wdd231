@@ -126,7 +126,7 @@
         border-top: 1px solid #8584ad;
     }
 
-    #navMenu.open{
+    #navMenu.open {
         display: flex;
     }
 }
@@ -144,21 +144,26 @@
 
 .hero-text {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #ffffff;
     max-width: 700px;
-    padding: 1rem;
+    padding: 0.5rem;
     border-radius: 15px;
     text-shadow: 2px 2px 8px rgb(6, 25, 29);
     text-align: center;
-    width: 70%;
+    width: 60%;
 }
+
 @media (max-width: 600px) {
     .hero-text {
+        top: 50%;
+        /* FIX: centers text vertically on mobile */
         width: 90%;
         padding: 1rem;
+        transform: translate(-50%, -50%);
+        /* keep perfect centering */
     }
 }
 
@@ -495,9 +500,11 @@ footer {
     text-align: center;
 
 }
+
 .sandy-left-box * {
     color: #e9dfdf;
 }
+
 .sandy-left-box h2 {
     color: #0f0909;
     margin-bottom: 0.5rem;
