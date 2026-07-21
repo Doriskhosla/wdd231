@@ -80,56 +80,6 @@
     box-shadow: 0 12px 28px rgba(0, 0, 0, 0.35);
 }
 
-#navMenu {
-    display: flex;
-    gap: 2rem;
-}
-
-#navMenu a {
-    text-decoration: none;
-    font-size: 1.1rem;
-    font-weight: 600;
-    padding: 0.5rem 1.2rem;
-    /*add spacing here */
-}
-
-#navMenu a:hover {
-    color: #3c54a3;
-    border-bottom: 2px solid #2f1d91;
-    /* change to a warm brown on hover */
-}
-
-#navMenu a.active {
-    background-color: #112941;
-    color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-}
-
-
-/* MOBILE */
-@media (max-width: 768px) {
-
-    #menu {
-        display: block;
-    }
-
-    #navMenu {
-        display: none;
-        flex-direction: column;
-        gap: 2rem;
-        width: 100%;
-        background-color: #f8f8f8;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        border-top: 1px solid #8584ad;
-    }
-
-    #navMenu.open {
-        display: flex;
-    }
-}
 
 .hero {
     position: relative;
@@ -197,20 +147,6 @@
     display: flex;
     align-items: center;
     gap: 1.5rem;
-}
-
-.navigation {
-    display: flex;
-    gap: 2rem;
-}
-
-#menu {
-    font-size: 2rem;
-    background: none;
-    border: none;
-    color: #0c1925;
-    /* FIXED */
-    cursor: pointer;
 }
 
 .logo {
@@ -621,5 +557,31 @@ footer {
     .sandy-left-img {
         width: 100%;
         height: auto;
+    }
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+    #menu {
+        display: block;
+    }
+
+    /* 1️⃣ Default mobile state — hidden */
+    #navMenu {
+        display: none;
+        flex-direction: column;
+        gap: 2rem;
+        width: 100%;
+        background-color: #f8f8f8;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        border-top: 1px solid #8584ad;
+    }
+
+    /* 2️⃣ When JS toggles .open — show menu */
+    #navMenu.open {
+        display: flex;
     }
 }

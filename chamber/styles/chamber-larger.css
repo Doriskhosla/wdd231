@@ -1,0 +1,38 @@
+/* DESKTOP NAVIGATION */
+#navMenu {
+    display: flex;
+    gap: 2rem;
+}
+
+#navMenu a {
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    padding: 0.5rem 1.2rem;
+}
+
+#navMenu a:hover {
+    color: #3c54a3;
+    border-bottom: 2px solid #2f1d91;
+}
+
+#navMenu a.active {
+    background-color: #112941;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+/* Desktop header layout */
+.navigation {
+    display: flex;
+    gap: 2rem;
+}
+
+#menu {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: #0c1925;
+    cursor: pointer;
+}
