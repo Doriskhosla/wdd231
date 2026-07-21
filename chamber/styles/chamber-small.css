@@ -144,7 +144,7 @@
 
 .hero-text {
     position: absolute;
-    top: 40%;
+    top: 60%;
     left: 50%;
     transform: translate(-50%, -50%);
     color: #ffffff;
@@ -158,7 +158,9 @@
 
 @media (max-width: 600px) {
     .hero-text {
-        top: 50%;
+        top: 60%;
+        /* LOWER the text on mobile */
+        left: 50%;
         /* FIX: centers text vertically on mobile */
         width: 90%;
         padding: 1rem;
