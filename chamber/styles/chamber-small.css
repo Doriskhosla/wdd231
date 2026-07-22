@@ -560,6 +560,10 @@ footer {
     }
 }
 
+header {
+    position: relative;
+}
+
 /* MOBILE */
 @media (max-width: 768px) {
 
@@ -567,11 +571,10 @@ footer {
         display: block;
     }
 
-    /* 1️⃣ Default mobile state — hidden */
     #navMenu {
         display: none;
         flex-direction: column;
-        gap: 2rem;
+        gap: 0;
         width: 100%;
         background-color: #f8f8f8;
         position: absolute;
@@ -580,8 +583,15 @@ footer {
         border-top: 1px solid #8584ad;
     }
 
-    /* 2️⃣ When JS toggles .open — show menu */
     #navMenu.show {
         display: flex;
+    }
+
+    #navMenu.show a {
+        display: block;
+        visibility: visible;
+        opacity: 1;
+        color: #112941;
+        padding: 1rem;
     }
 }
