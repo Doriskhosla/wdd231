@@ -563,7 +563,7 @@ footer {
 /* MOBILE */
 @media (max-width: 768px) {
 
-    #menu {
+    #hamburger {
         display: block;
     }
 
@@ -581,7 +581,7 @@ footer {
     }
 
     /* 2️⃣ When JS toggles .open — show menu */
-    #navMenu.open {
+    #navMenu.show {
         display: flex;
     }
 }
