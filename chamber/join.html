@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sandy City Chamber of Commerce | Join</title>
+    <meta name="description"
+        content="Join the Sandy City Chamber of Commerce to access networking opportunities, business promotion, community involvement, and professional training workshops.">
 
 
     <meta property="og:title" content="Join the Sandy City Chamber Membership Benefits and Application Form">
@@ -18,8 +20,6 @@
 
     <link rel="icon" href="favicon.ico">
 
-
-
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/chamber-small.css">
     <link rel="stylesheet" href="styles/chamber-larger.css">
@@ -27,6 +27,7 @@
 
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
+    <script src="scripts/modal.js" defer></script>
 
 </head>
 
@@ -34,8 +35,9 @@
 
     <header>
         <div class="logo">
-            <img src="images/logo.png" alt="Sandy Business Alliance Logo">
+            <img src="images/sandycity26.svg" alt="Sandy Business Alliance Logo">
             <h1>Sandy Business Alliance</h1>
+
         </div>
         <button id="hamburger" aria-label="Open navigation menu" aria-expanded="false">☰</button>
         <nav id="navMenu">
@@ -47,15 +49,12 @@
         </nav>
     </header>
 
+    <main class="join-main">
+        <section class="join-title card">
+            <h2>Join the Chamber</h2>
+        </section>
 
-
-
-
-
-    <main>
-        <h2>Join the Chamber</h2>
-
-        <section class="benefits">
+        <section class="benefits card">
             <h3>Membership Benefits</h3>
             <ul>
                 <li>Networking opportunities</li>
@@ -65,42 +64,168 @@
             </ul>
         </section>
 
-        <section class="levels">
+        <section class="levels card">
             <h3>Membership Levels</h3>
             <p>Non-profit, Silver, Gold</p>
         </section>
 
 
 
-
-
         <form action="thankyou.html" method="get">
-            <label>First Name: <input type="text" name="fname" required></label>
-            <label>Last Name: <input type="text" name="lname" required></label>
-            <label>Email: <input type="email" name="email" required></label>
-            <label>Phone: <input type="tel" name="phone"></label>
 
+            <label title="First Name">
+                First Name:
+                <input type="text" name="fname" required autocomplete="given-name">
+            </label>
 
-            <label>Business Name: <input type="text" name="business"></label>
+            <label title="Last Name">
+                Last Name:
+                <input type="text" name="lname" required autocomplete="family-name">
+            </label>
 
-            <label>Membership Level:
+            <label title="Organization Title">
+                Organizational Title:
+                <input type="text" name="orgtitle" autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}">
+            </label>
+
+            <label title="Email Address">
+                Email:
+                <input type="email" name="email" required autocomplete="email" placeholder="example@email.com">
+            </label>
+
+            <label title="Mobile Phone">
+                Phone:
+                <input type="tel" name="phone" required autocomplete="tel">
+            </label>
+
+            <label title="Business Name">
+                Business Name:
+                <input type="text" name="organization" required autocomplete="organization">
+            </label>
+
+            <label title="Membership Level">
+                Membership Level:
                 <select name="level" required>
-                    <option value="np">Non-profit</option>
-                    <option value="silver">Silver</option>
-                    <option value="gold">Gold</option>
+                    <option value="np">NP Membership (Non-profit)</option>
+                    <option value="bronze">Bronze Membership</option>
+                    <option value="silver">Silver Membership</option>
+                    <option value="gold">Gold Membership</option>
                 </select>
             </label>
 
+            <label title="Business Description">
+                Business Description:
+                <textarea name="description"></textarea>
+            </label>
+
+            <input type="hidden" id="timestamp" name="timestamp">
+
             <button type="submit">Join Now</button>
+
         </form>
+
+        <script>
+            document.getElementById("timestamp").value = new Date().toISOString();
+        </script>
+
+
+        <section class="membership-cards">
+
+            <div class="card np">
+                <h3>NP Membership</h3>
+                <button class="open-modal" data-modal="npModal">View Benefits</button>
+            </div>
+
+            <div class="card bronze">
+                <h3>Bronze Membership</h3>
+                <button class="open-modal" data-modal="bronzeModal">View Benefits</button>
+            </div>
+
+            <div class="card silver">
+                <h3>Silver Membership</h3>
+                <button class="open-modal" data-modal="silverModal">View Benefits</button>
+            </div>
+
+            <div class="card gold">
+                <h3>Gold Membership</h3>
+                <button class="open-modal" data-modal="goldModal">View Benefits</button>
+            </div>
+
+        </section>
+
+        <dialog id="npModal">
+            <h2>NP Membership Benefits</h2>
+            <ul>
+                <li>No membership fee</li>
+                <li>Basic directory listing</li>
+                <li>Community event access</li>
+            </ul>
+            <button class="close">Close</button>
+        </dialog>
+
+
+        <dialog id="bronzeModal">
+            <h2>Bronze Membership Benefits</h2>
+            <ul>
+                <li>Directory listing</li>
+                <li>Event discounts</li>
+                <li>Training workshops</li>
+            </ul>
+            <button class="close">Close</button>
+        </dialog>
+
+        <dialog id="silverModal">
+            <h2>Silver Membership Benefits</h2>
+            <ul>
+                <li>Spotlight advertising</li>
+                <li>Priority event access</li>
+                <li>Advanced training</li>
+            </ul>
+            <button class="close">Close</button>
+        </dialog>
+
+
+
+        <dialog id="goldModal">
+            <h2>Gold Membership Benefits</h2>
+            <ul>
+                <li>Premium advertising</li>
+                <li>VIP event access</li>
+                <li>Exclusive sponsorship opportunities</li>
+            </ul>
+            <button class="close">Close</button>
+        </dialog>
+
+
     </main>
 
     <footer>
-        <p>&copy; <span id="year"></span> Sandy Business Alliance • Doris • WDD 231</p>
-        <p>Last Modification: <span id="lastModified"></span></p>
+        <div class="social">
+            <div class="social-icons">
+                <a href="https://github.com/YourGitHubUsername" target="_blank">
+                    <img src="images/github.webp" alt="GitHub" width="30" height="30">
+                </a>
+
+                <a href="https://www.linkedin.com/in/YourLinkedInProfile" target="_blank">
+                    <img src="images/linkedin.webp" alt="LinkedIn" width="30" height="30">
+                </a>
+
+                <a href="https://facebook.com" target="_blank">
+                    <img src="images/facebook.webp" alt="Facebook" width="30" height="30">
+                </a>
+
+                <a href="https://twitter.com" target="_blank">
+                    <img src="images/twitter.webp" alt="Twitter" width="30" height="30">
+                </a>
+            </div>
+        </div>
+
+        <p>&copy; <span id="Year"></span> Maria D. Khosla. | Utah. USA | All rights reserved</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+
     </footer>
 
-    <script src="js/date.js"></script>
+
 </body>
 
 </html>
