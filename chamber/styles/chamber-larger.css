@@ -177,12 +177,9 @@
     text-align: left;
     border-left: 8px solid;
     width: 50%;
-    /* adjust as you like */
     margin-left: auto;
-    /* centers the box */
-    margin-center: auto;
-    /* centers the box */
-
+    margin-right: auto;
+    /* this is the correct centering */
 }
 
 .join-title.card {

@@ -29,6 +29,14 @@
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
     <script src="scripts/modal.js" defer></script>
+    <script src="scripts/timestamp.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
 
 </head>
 
@@ -121,14 +129,12 @@
                 Business Description:
                 <textarea name="description" title="Business Description"></textarea>
             </label>
-            
+            <input type="hidden" id="timestamp" name="timestamp">
+
             <button type="submit">Join Now</button>
 
         </form>
 
-        <script>
-            document.getElementById("timestamp").value = new Date().toISOString();
-        </script>
 
 
         <section class="membership-cards">
