@@ -168,10 +168,10 @@
 
     /* Membership cards */
     .card {
-        background: rgba(59, 49, 49, 0.418);
+        background: rgba(96, 112, 121, 0.418);
         padding: 1rem;
         border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 0 10px rgba(8, 6, 6, 0.1);
         text-align: center;
     }
 
@@ -208,10 +208,10 @@
 }
 
 .join-title.card {
-    background: rgba(202, 184, 184, 0.473);
+    background: rgba(142, 153, 190, 0.473);
     padding: 1rem;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(22, 22, 22, 0.1);
     margin-bottom: 1rem;
     text-align: center;
     /* adjust as you like */
