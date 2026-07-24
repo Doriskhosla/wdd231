@@ -334,6 +334,7 @@ footer {
     display: block;
     min-height: 400px;
 }
+
 .navigation a {
     color: #112941;
     /* your preferred color */
@@ -342,6 +343,7 @@ footer {
     font-weight: 600;
     /* optional: makes text stronger */
 }
+
 .navigation a.active {
     color: #2a4f6e;
 }
@@ -591,6 +593,9 @@ header {
 
     #hamburger {
         display: block;
+        position: relative;
+        z-index: 10000;
+        /* keeps hamburger above hero */
     }
 
     #navMenu {
@@ -603,6 +608,8 @@ header {
         top: 60px;
         left: 0;
         border-top: 1px solid #8584ad;
+        z-index: 9999;
+        /* <-- THIS FIXES THE OVERLAP */
     }
 
     #navMenu.show {
@@ -626,4 +633,36 @@ header {
     margin-bottom: 1.5rem;
     text-align: center;
     max-width: 100%;
+}
+
+.thankyou-box {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 600px;
+    margin: 15rem auto;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    /* pushes footer down */
+}
+
+footer {
+    background: #b3bcc7;
+    padding: 1rem;
+    text-align: center;
 }
