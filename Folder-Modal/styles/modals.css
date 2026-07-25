@@ -1,0 +1,26 @@
+#openButton {
+    background-color: rgb(138, 189, 189);
+}
+
+#dialogBox {
+    background-color: rgb(129, 217, 233);
+}
+
+#closeButton {
+    background-color: rgb(215, 250, 232);
+}
+
+::backdrop {
+    background-color: rgb(143, 162, 173);
+}
+
+nav a {
+    padding: 12px 20px;
+    /* makes the tap area bigger */
+    display: inline-block;
+}
+
+nav li {
+    margin-bottom: 8px;
+    /* spacing between links */
+}
