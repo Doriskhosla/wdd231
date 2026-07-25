@@ -1,0 +1,47 @@
+/* Layout for the small temples page */
+#showHere {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+
+/* Temple card styling */
+#showHere section {
+    background-color: #f7f7f7;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Temple images */
+#showHere img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 0.5rem;
+}
+
+/* Temple titles */
+#showHere h2 {
+    margin: 0;
+    font-size: 1.3rem;
+    color: #333;
+}
+
+/* Text inside cards */
+#showHere p {
+    margin: 0.3rem 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Navigation touch target fix */
+nav a {
+    padding: 12px 20px;
+    display: inline-block;
+}
+
+nav li {
+    margin-bottom: 8px;
+}
