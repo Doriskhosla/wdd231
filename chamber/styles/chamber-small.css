@@ -725,3 +725,73 @@ footer {
         max-width: 100%;
     }
 }
+
+#discoverCards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
+}
+#discoverCards .place-card img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+
+
+/* Card container */
+#discoverCards .place-card {
+    margin: 1rem 8px;
+    border: 1px solid #999;
+    background-color: #eee;
+    border-radius: 8px;
+
+    display: grid;
+    grid-template-areas:
+        "name"
+        "image"
+        "description"
+        "address"
+        "button";
+}
+
+/* Title */
+#discoverCards .place-card h2 {
+    grid-area: name;
+    margin: 1rem 10px;
+}
+
+/* Image area */
+#discoverCards .place-card figure {
+    grid-area: image;
+    margin: 0;
+}
+
+
+
+/* Description */
+#discoverCards .place-card p {
+    grid-area: description;
+    margin: 1rem 10px;
+}
+
+/* Address */
+#discoverCards .place-card address {
+    grid-area: address;
+    margin: 1rem 10px;
+    
+}
+
+/* Button */
+#discoverCards .place-card button {
+    grid-area: button;
+    margin: 1rem 10px;
+    padding: 0.5rem;
+    border-radius: 6px;
+    background-color: #ccc;
+    border: none;
+}

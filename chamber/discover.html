@@ -6,28 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sandy City Chamber of Commerce | Discover</title>
 
+    <meta name="author" content="Maria D. Khosla">
+    <meta name="description"
+        content="Welcome to the Sandy Business Chamber of Commerce. we are proud to support local businesses">
+
     <meta property="og:title" content="Discover Sandy City Community Insights, History, Events, and Local Highlights">
     <meta property="og:description"
         content="Learn more about Sandy City through local insights, history, demographics, and community highlights that showcase what makes our city unique.">
-
     <meta property="og:image" content="https://doriskhosla.github.io/wdd231/chamber/images/sandycity.jpg">
     <meta property="og:url" content="https://doriskhosla.github.io/wdd231/chamber/discover.html">
 
-
     <link rel="icon" href="favicon.ico">
 
+    <!-- Google Fonts (correct placement) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
 
+    <!-- CSS -->
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/chamber-small.css">
     <link rel="stylesheet" href="styles/chamber-larger.css">
 
+    <!-- Scripts -->
     <script src="scripts/date.js" defer></script>
     <script src="scripts/navigation.js" defer></script>
-
-
+    <script src="scripts/discover.js" type="module" defer></script>
 </head>
-
-
 
 
 <body>
@@ -52,44 +59,49 @@
 
         <section class="history">
             <h3>Local History</h3>
-            <p>Write your Sandy history content here...</p>
+            <p>Sandy began as a mining and railroad town in the late 1800s. After mining declined, it grew into a
+                farming community and
+                later a modern suburban city. Today, Sandy blends its historic roots with strong neighborhoods,
+                businesses, and mountain
+                access.</p>
         </section>
 
         <section class="demographics">
             <h3>Demographics</h3>
-            <p>Population, age, income, etc...</p>
+            <p>Sandy has a population of about 96,000 residents, making it one of the largest and fastest‑growing
+                communities in the
+                Salt Lake Valley.</p>
         </section>
+
 
         <section class="events">
-            <h3>Upcoming Events</h3>
-            <section class="events">
-                <h2>Upcoming Events</h2>
+            <h2>Upcoming Events</h2>
 
-                <ul>
-                    <li>
-                        <strong>Business Networking Breakfast</strong><br>
-                        July 18, 2026 Sandy City Hall
-                    </li>
+            <ul>
+                <li>
+                    <strong>Business Networking Breakfast</strong><br>
+                    July 18, 2026 Sandy City Hall
+                </li>
 
-                    <li>
-                        <strong>Small Business Workshop</strong><br>
-                        July 25, 2026 Chamber Conference Center
-                    </li>
+                <li>
+                    <strong>Small Business Workshop</strong><br>
+                    July 25, 2026 Chamber Conference Center
+                </li>
 
-                    <li>
-                        <strong>Community Market Day</strong><br>
-                        August 3, 2026 Sandy Park Pavilion
-                    </li>
-                </ul>
-            </section>
+                <li>
+                    <strong>Community Market Day</strong><br>
+                    August 3, 2026 Sandy Park Pavilion
+                </li>
+            </ul>
+        </section>
 
         </section>
 
-        <section class="gallery">
-            <h3>Image Gallery</h3>
-            <img src="images/sandymountain.webp" alt="Sandy Utah">
-            <img src="images/sandycity.jpg" alt="Sandy Utah">
-            <img src="images/community.jpg" alt="Sandy Utah">
+
+        <section class="discover-cards">
+            <h2>Explore Sandy</h2>
+
+            <div id="discoverCards"></div>
         </section>
     </main>
 
@@ -99,7 +111,6 @@
         <p>Last Modification: <span id="lastModified"></span></p>
     </footer>
 
-    <script src="js/date.js"></script>
 </body>
 
 </html>
