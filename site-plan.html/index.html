@@ -7,52 +7,56 @@
     <title>AI Tools Explorer - Site Plan</title>
     <style>
         body {
-    font-family: "Open Sans", Arial, sans-serif;
-    background-color: #FAF6F8;
-    color: #222222;
-    margin: 0;
-    padding: 2rem;
-    line-height: 1.6;
-}
+            font-family: "Open Sans", Arial, sans-serif;
+            background-color: #FAF6F8;
+            color: #222222;
+            margin: 0;
+            padding: 2rem;
+            line-height: 1.6;
+        }
 
-h1,
-h2,
-h3 {
-    font-family: "Poppins", Arial, sans-serif;
-    color: #1E3A5F;
-    margin-top: 1.5rem;
-}
+        /* Headings: dark blue on light background → great contrast */
+        h1,
+        h2,
+        h3 {
+            font-family: "Poppins", Arial, sans-serif;
+            color: #1E3A5F;
+            margin-top: 1.5rem;
+        }
 
-/* FIX: Make header title white */
-header h1 {
-    color: white;
-}
+        /* Header title: white on blue → great contrast */
+        header h1 {
+            color: white;
+        }
 
-.accent {
-    color: #1E3A5F;
-}
+        /* Accent: dark blue on white → great contrast */
+        .accent {
+            color: #1E3A5F;
+        }
 
-header,
-footer {
-    background-color: #6584ac;
-    color: white;
-    padding: 1rem 2rem;
-    margin: -2rem -2rem 2rem -2rem;
-}
+        /* Header/footer: white on #6584ac → great contrast */
+        header,
+        footer {
+            background-color: #6584ac;
+            color: white;
+            padding: 1rem 2rem;
+            margin: -2rem -2rem 2rem -2rem;
+        }
 
-section {
-    background-color: #FFFFFF;
-    padding: 1.5rem;
-    margin-bottom: 1.5rem;
-    border-radius: 8px;
-    border: 1px solid #73c4bd;
-}
+        /* SECTION: only small tweak needed → border color */
+        section {
+            background-color: #FFFFFF;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid #1E3A5F;
+            /* or #4CAF50 */
+        }
 
-.wireframe-list {
-    list-style-type: disc;
-    padding-left: 1.5rem;
-}
-
+        .wireframe-list {
+            list-style-type: disc;
+            padding-left: 1.5rem;
+        }
     </style>
 </head>
 
@@ -136,7 +140,7 @@ section {
             <li><strong class="accent">Light Green (#4CAF50)</strong> Buttons, links, highlights, call-to-action
                 elements</li>
             <li><strong>Light Gray (#FAF6F8)</strong> Page backgrounds and content sections</li>
-            <li><strong>White (#FFFFFF)</strong>  Cards, forms, content backgrounds</li>
+            <li><strong>White (#FFFFFF)</strong> Cards, forms, content backgrounds</li>
         </ul>
         <p>
             These colors provide good contrast, improve readability, and create a clean, professional appearance.
