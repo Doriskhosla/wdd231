@@ -731,6 +731,7 @@ footer {
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 1.5rem;
 }
+
 #discoverCards .place-card img {
     width: 300px;
     height: 200px;
@@ -783,15 +784,16 @@ footer {
 #discoverCards .place-card address {
     grid-area: address;
     margin: 1rem 10px;
-    
+
 }
 
-/* Button */
-#discoverCards .place-card button {
-    grid-area: button;
-    margin: 1rem 10px;
-    padding: 0.5rem;
-    border-radius: 6px;
-    background-color: #ccc;
-    border: none;
+.history,
+.demographics {
+    background-color: #FAF6F8;
+    /* your site plan light gray */
+    padding: 1.5rem;
+    margin: 1.5rem 0;
+    border-radius: 8px;
+    border: 1px solid #1E3A5F;
+    /* dark blue border for contrast */
 }

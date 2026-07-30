@@ -17,7 +17,7 @@ discover.slice(0, 8).forEach(place => {
 
         <p>${place.description}</p>
 
-        <button>Learn More</button>
+        
     `;
 
     container.appendChild(card);
