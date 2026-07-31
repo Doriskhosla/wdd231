@@ -832,3 +832,10 @@ footer {
 #discoverCards .place-card .button:hover {
     background-color: #1e4d7a;
 }
+
+#discoverCards .place-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
