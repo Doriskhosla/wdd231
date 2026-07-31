@@ -34,10 +34,11 @@ visitMessage.id = "visitMessage";
 // Put the message inside the box
 visitBox.appendChild(visitMessage);
 
-// Insert the box right under the Discover Sandy heading
-const heading = document.querySelector("main h2");
-heading.insertAdjacentElement("afterend", visitBox);
+const heading = document.querySelector("#discover-title");
 
+if (heading) {
+    heading.insertAdjacentElement("afterend", visitBox);
+}
 // LocalStorage logic stays the same
 const lastVisit = localStorage.getItem("lastVisit");
 const now = Date.now();
@@ -45,7 +46,7 @@ const now = Date.now();
 if (!lastVisit) {
     visitMessage.textContent = "Welcome! This is your first visit.";
 } else {
-    const days = Math.round((now - lastVisit) / (1000 * 60 * 60 * 24));
+    const days = Math.round((now - Number(lastVisit)) / (1000 * 60 * 60 * 24));
     visitMessage.textContent = `You last visited ${days} days ago.`;
 }
 

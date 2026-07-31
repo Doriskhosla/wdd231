@@ -726,66 +726,7 @@ footer {
     }
 }
 
-#discoverCards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 1.5rem;
-}
 
-#discoverCards .place-card img {
-    width: 300px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 6px;
-    display: block;
-    margin: 0 auto;
-}
-
-
-
-
-/* Card container */
-#discoverCards .place-card {
-    margin: 1rem 8px;
-    border: 1px solid #999;
-    background-color: #eee;
-    border-radius: 8px;
-
-    display: grid;
-    grid-template-areas:
-        "name"
-        "image"
-        "description"
-        "address"
-        "button";
-}
-
-/* Title */
-#discoverCards .place-card h2 {
-    grid-area: name;
-    margin: 1rem 10px;
-}
-
-/* Image area */
-#discoverCards .place-card figure {
-    grid-area: image;
-    margin: 0;
-}
-
-
-
-/* Description */
-#discoverCards .place-card p {
-    grid-area: description;
-    margin: 1rem 10px;
-}
-
-/* Address */
-#discoverCards .place-card address {
-    grid-area: address;
-    margin: 1rem 10px;
-
-}
 
 .history,
 .demographics {
@@ -819,4 +760,75 @@ footer {
     font-weight: 600;
     color: #2a4b8d;
     text-align: center;
+}
+
+/* ==========================
+   Discover Page Cards
+========================== */
+
+#discoverCards {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+#discoverCards .place-card {
+    display: grid;
+    grid-template-areas:
+        "name"
+        "image"
+        "description"
+        "address"
+        "button";
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #eee;
+    border: 1px solid #999;
+    border-radius: 8px;
+}
+
+#discoverCards .place-card h2 {
+    grid-area: name;
+    margin: 0;
+    color: #112941;
+}
+
+#discoverCards .place-card figure {
+    grid-area: image;
+    margin: 0;
+}
+
+#discoverCards .place-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+#discoverCards .place-card p {
+    grid-area: description;
+    margin: 0;
+    line-height: 1.5;
+}
+
+#discoverCards .place-card address {
+    grid-area: address;
+    margin: 0;
+    font-style: italic;
+}
+
+#discoverCards .place-card .button {
+    grid-area: button;
+    width: fit-content;
+    padding: 0.6rem 1rem;
+    background-color: #112941;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+#discoverCards .place-card .button:hover {
+    background-color: #1e4d7a;
 }
