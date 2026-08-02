@@ -7,9 +7,9 @@ async function getMembers() {
         const response = await fetch("data/members.json");
         const data = await response.json();
 
-        const members = data.members;   
+        const members = data.members;
 
-        members.sort((a, b) => b.membershipLevel - a.membershipLevel);
+        members.sort((a, b) => a.membership.localeCompare(b.membership));
 
         displayMembers(members);
     } catch (error) {
@@ -40,7 +40,8 @@ function displayMembers(members) {
         <p>${member.address}</p>
         <p>${member.phone}</p>
         <a href="${member.website}" target="_blank">Visit Website</a>
-        <p class="level">Membership Level: ${member.membershipLevel}</p>
+        <p class="level">Membership Level: ${member.membership}</p>
+
     </div>
 `;
 

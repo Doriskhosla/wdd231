@@ -20,7 +20,7 @@
 
 
 
-    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="images/favicon.ico">
 
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/chamber-small.css">
@@ -29,6 +29,7 @@
 
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
 
 
 </head>
@@ -55,13 +56,22 @@
 
 
     <main>
+
+
         <section class="thankyou-box card">
             <h2>Thank You for Joining!</h2>
             <p>Your membership application has been received.</p>
+
+            <h3>Submitted Information</h3>
+
+            <p><strong>First Name:</strong> <span id="fname"></span></p>
+            <p><strong>Last Name:</strong> <span id="lname"></span></p>
+            <p><strong>Email:</strong> <span id="email"></span></p>
+            <p><strong>Phone:</strong> <span id="phone"></span></p>
+            <p><strong>Business Name:</strong> <span id="organization"></span></p>
+            <p><strong>Date Submitted:</strong> <span id="timestamp"></span></p>
         </section>
     </main>
-
-
 
 
 
@@ -71,7 +81,6 @@
         <p>Last Modification: <span id="lastModified"></span></p>
     </footer>
 
-    <script src="js/date.js"></script>
 </body>
 
 </html>
