@@ -674,7 +674,7 @@ footer {
     .join-main {
         display: block;
         padding: 1rem;
-        background-color: #64a2aa;
+        background-color: #629096;
     }
 
     /* Membership cards stack normally */
@@ -708,8 +708,11 @@ footer {
     .membership-cards .card {
         width: 100%;
         box-sizing: border-box;
-        background-color: #6d8da7;
+        background-color: #7696b1;
     }
+        .membership-cards .card h2 {
+            color: #070707;
+        }
 
     /* Form full width on mobile */
     form {
