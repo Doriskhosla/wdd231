@@ -111,7 +111,7 @@
     }
 
     form button:hover {
-        background: #4098e6;
+        background: #76b2e6;
     }
 
     /* Cards */
@@ -120,14 +120,14 @@
             background: rgba(45, 50, 53, 0.418);
             padding: 1rem;
             border-radius: 8px;
-            box-shadow: 0 0 10px rgba(8, 6, 6, 0.1);
+            box-shadow: 0 0 10px rgba(88, 83, 83, 0.1);
             text-align: center;
-            color: #ffffff;
+            color: #2c2626;
             /* ← THIS FIXES THE REMAINING FAILURES */
         }
     
         .card h2 {
-            color: #ffffff;
+            color: #201d1d;
         }
     
     .card h3 {
