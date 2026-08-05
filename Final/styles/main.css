@@ -1,0 +1,175 @@
+.tools-section {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+.tools-section h1 {
+    margin-bottom: 2rem;
+    color: rgb(5, 3, 3);
+}
+
+.tools-section img {
+    display: block;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+/* GRID CONTAINER */
+#tools-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+/* CARD */
+.tool-card {
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 8px;
+    min-height: 430px;
+}
+
+
+/* INNER CARD */
+.tool-card .inner {
+    background: rgb(201, 215, 231);
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(34, 33, 33, 0.1);
+    height: auto;
+    /* change this */
+}
+
+.tool-card .inner a {
+    display: inline-block;
+    padding: 0.5rem 0.75rem;
+    color: #003366;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.tool-card .inner a:hover {
+    color: #001a33;
+}
+
+
+.tool-card .inner {
+    color: #0e0b0b;
+}
+
+
+/* IMAGE */
+.tool-card img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 300 / 200;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 0.5rem;
+}
+
+.tools-banner {
+    display: block;
+    margin: 1rem auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+#navMenu a {
+    display: inline-block;
+    /* ← REQUIRED for touch targets */
+    margin-right: 0.75rem;
+    padding: 0.75rem 1rem;
+}
+
+#navMenu.open a {
+    margin-bottom: 0.5rem;
+}
+
+#hamburger {
+    width: 48px;
+    height: 48px;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#closeModal {
+    width: 48px;
+    height: 48px;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background: none;
+}
+
+
+.open-modal {
+    display: inline-block;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem;
+    background-color: #94d1ce;
+    color: rgb(5, 3, 3);
+}
+
+/* Full-screen hero section */
+
+#hero {
+    height: 100vh;
+    background-image: url("../images/multicolor.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: white;
+    padding: 2rem;
+    position: relative;
+}
+
+
+/* Dark overlay for readability */
+#hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 0;
+}
+
+#hero h1,
+#hero p {
+    position: relative;
+    z-index: 1;
+}
+
+footer {
+    background-color: #94d1ce;
+    color: rgb(5, 3, 3);
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}

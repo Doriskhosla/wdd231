@@ -1,0 +1,137 @@
+[
+    {
+        "id": 1,
+        "name": "ChatGPT",
+        "category": "Writing",
+        "pricing": "Free first month, then choose a plan",
+        "description": "AI assistant for writing, coding, and learning.",
+        "website": "https://openai.com/chatgpt",
+        "image": "images/chatgpt.webp"
+    },
+    {
+        "id": 2,
+        "name": "Canva AI",
+        "category": "Design",
+        "pricing": "Free first month, then choose a plan",
+        "description": "AI-powered design tool for graphics and presentations.",
+        "website": "https://canva.com",
+        "image": "images/canvas.webp"
+    },
+    {
+        "id": 3,
+        "name": "Midjourney",
+        "category": "Image Generation",
+        "pricing": "Free first month, then choose a plan",
+        "description": "Generates high-quality artistic images using AI.",
+        "website": "https://midjourney.com",
+        "image": "images/midjourney.webp"
+    },
+    {
+        "id": 4,
+        "name": "DALL·E",
+        "category": "Image Generation",
+        "pricing": "Free first month, then choose a plan",
+        "description": "Creates images from text prompts using advanced AI.",
+        "website": "https://openai.com/dall-e",
+        "image": "images/dall.webp"
+    },
+    {
+        "id": 5,
+        "name": "Claude",
+        "category": "Writing",
+        "pricing": "Free first month, then choose a plan",
+        "description": "AI assistant for analysis, writing, and research.",
+        "website": "https://claude.ai",
+        "image": "images/claude.webp"
+    },
+    {
+        "id": 6,
+        "name": "Google Gemini",
+        "category": "Productivity",
+        "pricing": "Free first month, then choose a plan",
+        "description": "AI model for writing, coding, and multimodal tasks.",
+        "website": "https://gemini.google.com",
+        "image": "images/gemini.webp"
+    },
+    {
+        "id": 7,
+        "name": "Notion AI",
+        "category": "Productivity",
+        "pricing": "Free first month, then choose a plan",
+        "description": "AI assistant integrated into Notion for writing and organization.",
+        "website": "https://notion.so",
+        "image": "images/notion.webp"
+    },
+    {
+        "id": 8,
+        "name": "Grammarly AI",
+        "category": "Writing",
+        "pricing": "Free first month, then choose a plan",
+        "description": "AI-powered grammar checking and writing enhancement.",
+        "website": "https://grammarly.com",
+        "image": "images/grammarly.webp"
+    },
+    {
+        "id": 9,
+        "name": "Adobe Firefly",
+        "category": "Image Generation",
+        "pricing": "Free first month, then choose a plan",
+        "description": "AI tool for generating and editing creative images.",
+        "website": "https://adobe.com/firefly",
+        "image": "images/firefly.webp"
+    },
+    {
+        "id": 10,
+        "name": "RunwayML",
+        "category": "Video & Image",
+        "pricing": "Free first month, then choose a plan",
+        "description": "AI-powered video editing and creative tools.",
+        "website": "https://runwayml.com",
+        "image": "images/runway.webp"
+    },
+    {
+        "id": 11,
+        "name": "Jasper AI",
+        "category": "Writing",
+        "pricing": "Free first month, then choose a plan",
+        "description": "AI writing assistant for marketing and content creation.",
+        "website": "https://jasper.ai",
+        "image": "images/jasper.webp"
+    },
+    {
+        "id": 12,
+        "name": "Copy.ai",
+        "category": "Writing",
+        "pricing": "Free first month, then choose a plan",
+        "description": "AI tool for generating marketing copy and content.",
+        "website": "https://copy.ai",
+        "image": "images/copy.webp"
+    },
+    {
+        "id": 13,
+        "name": "GitHub Copilot",
+        "category": "Coding",
+        "pricing": "Free first month, then choose a plan",
+        "description": "AI coding assistant that helps write code faster.",
+        "website": "https://github.com/features/copilot",
+        "image": "images/github.webp"
+    },
+    {
+        "id": 14,
+        "name": "Perplexity AI",
+        "category": "Search",
+        "pricing": "Free first month, then choose a plan",
+        "description": "AI-powered search engine with accurate answers.",
+        "website": "https://perplexity.ai",
+        "image": "images/perplexity.webp"
+    },
+    {
+        "id": 15,
+        "name": "ElevenLabs",
+        "category": "Audio",
+        "pricing": "Free first month, then choose a plan",
+        "description": "AI voice generation and text-to-speech platform.",
+        "website": "https://elevenlabs.io",
+        "image": "images/labs.webp"
+    }
+]
