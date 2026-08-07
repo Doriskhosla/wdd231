@@ -10,25 +10,34 @@
     <title>Attributions</title>
 
     <!-- Open Graph Tags -->
-    <meta property="og:title" content="AI Tools Explorer – Attributions">
+    <meta property="og:title" content="AI Tools Explorer - Attributions">
     <meta property="og:description" content="Resource attributions for the AI Tools Explorer project.">
     <meta property="og:image" content="images/multicolor.webp">
-    <meta property="og:url" content="https://doriskhosla.github.io/wdd231/final/data/attributions.html">
-
+    <meta property="og:url" content="https://doriskhosla.github.io/wdd231/finalproject/attributions.html">
     <meta property="og:type" content="website">
 
-    <link rel="stylesheet" href="../styles/main.css">
-    <link rel="stylesheet" href="../styles/attributions.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/larger.css">
 
-    <link rel="icon" href="../images/favicon.ico" type="image/x-icon">
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
 
 </head>
 
-<body>
+<body class="attributions-body">
+
     <header>
-        <h1>Attributions</h1>
+        <div class="logo">AI Tools Explorer</div>
+        <button id="hamburger">☰</button>
+        <nav id="navMenu">
+            <a href="index.html">Home</a>
+            <a href="tools.html">AI Tools</a>
+            <a href="attributions.html" class="active">Attributions</a>
+        </nav>
     </header>
+
+    <h1>Attributions</h1>
 
     <main>
         <h2>Images</h2>
@@ -45,6 +54,8 @@
     <footer>
         <p>&copy; 2026 AI Tools Explorer</p>
         <p><a href="video.html">Project Video</a></p>
-        <p><a href="attributions.html">Attributions</a></p>
+        <p><a href="attributions.html" class="active">Attributions</a></p>
     </footer>
+
+    <script src="scripts/navigations.js"></script>
 </body>

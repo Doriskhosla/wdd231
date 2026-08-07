@@ -173,6 +173,7 @@ footer {
     bottom: 0;
     width: 100%;
 }
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -186,6 +187,7 @@ footer {
 #hero {
     animation: fadeIn 1.5s ease-out;
 }
+
 .corner-image {
     position: absolute;
     top: 20px;
@@ -201,6 +203,7 @@ footer {
 .right-corner {
     right: 20px;
 }
+
 #hero {
     display: flex;
     flex-direction: column;
@@ -232,16 +235,21 @@ footer {
     transform: scale(1.05);
     transition: transform 0.3s ease-in-out;
 }
- 
+
 /*ATTRIBUTIONS PAGE STYLING*/
 .attributions-body {
     font-family: Arial, sans-serif;
-    max-width: 800px;
-    margin: 2rem auto;
     padding: 1rem;
     line-height: 1.6;
 }
 
+/* Center content like other pages */
+.attributions-body main {
+    max-width: 800px;
+    margin: 2rem auto;
+}
+
+/* Headings */
 .attributions-body h1 {
     text-align: center;
     margin-bottom: 2rem;
@@ -252,6 +260,7 @@ footer {
     color: #333;
 }
 
+/* Footer */
 .attributions-body footer {
     margin-top: 3rem;
     padding-top: 1rem;
@@ -259,9 +268,6 @@ footer {
     text-align: center;
 }
 
-.attributions-body a {
-    color: #0066cc;
-}
 /* Attribution Blocks */
 .attrib-block {
     background-color: #f7f7f7;
@@ -280,31 +286,14 @@ footer {
     margin: 0.5rem 0;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    max-width: 800px;
-    margin: 2rem auto;
-    padding: 1rem;
-    line-height: 1.6;
+/* High-contrast nav/footer links */
+header a,
+footer a {
+    color: #0a0a0a;
+    font-weight: 600;
 }
 
-h1 {
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-h2 {
-    margin-top: 1.5rem;
-    color: #333;
-}
-
-footer {
-    margin-top: 3rem;
-    padding-top: 1rem;
-    border-top: 1px solid #ccc;
-    text-align: center;
-}
-
-a {
-    color: #0066cc;
+header a.active,
+footer a.active {
+    color: #000;
 }
