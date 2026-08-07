@@ -158,6 +158,16 @@ header {
     z-index: 1;
 }
 
+.intro {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: rgb(201, 215, 231);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(34, 33, 33, 0.1);
+    text-align: center;
+}
+
 footer {
     background-color: #94d1ce;
     color: rgb(5, 3, 3);
