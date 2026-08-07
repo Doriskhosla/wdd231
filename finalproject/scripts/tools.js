@@ -46,7 +46,7 @@ export function displayTools(tools) {
     });
 }
 
-/* ⭐ THIS MUST BE OUTSIDE THE LOOP ⭐ */
+/*  THIS MUST BE OUTSIDE THE LOOP  */
 loadTools().then(tools => {
     displayTools(tools);
 });

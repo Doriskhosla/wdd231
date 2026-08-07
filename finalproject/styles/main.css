@@ -14,7 +14,7 @@
     padding: 2rem 0;
 }
 
-/* GRID CONTAINER */
+/* GRID CONTAINER — consolidated */
 #tools-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -29,15 +29,15 @@
     min-height: 430px;
 }
 
-
-/* INNER CARD */
+/* INNER CARD — consolidated */
 .tool-card .inner {
     background: rgb(201, 215, 231);
     padding: 1rem;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(34, 33, 33, 0.1);
     height: auto;
-    /* change this */
+    color: #0e0b0b;
+    /* moved here */
 }
 
 .tool-card .inner a {
@@ -51,12 +51,6 @@
 .tool-card .inner a:hover {
     color: #001a33;
 }
-
-
-.tool-card .inner {
-    color: #0e0b0b;
-}
-
 
 /* IMAGE */
 .tool-card img {
@@ -130,6 +124,7 @@ header {
 
 /* Full-screen hero section */
 
+/* Full-screen hero section */
 #hero {
     height: 100vh;
     background-image: url("../images/multicolor.webp");
@@ -146,8 +141,9 @@ header {
     color: white;
     padding: 2rem;
     position: relative;
-}
 
+    animation: fadeIn 1.5s ease-out;
+}
 
 /* Dark overlay for readability */
 #hero::before {
@@ -184,9 +180,6 @@ footer {
     }
 }
 
-#hero {
-    animation: fadeIn 1.5s ease-out;
-}
 
 .corner-image {
     position: absolute;
@@ -204,12 +197,7 @@ footer {
     right: 20px;
 }
 
-#hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-}
+
 
 #hero img {
     margin: 20px;
