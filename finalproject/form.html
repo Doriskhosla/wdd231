@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Form - AI Tools Explorer</title>
+
+    <meta name="description" content="Submit your feedback using the AI Tools Explorer form.">
+    <meta name="author" content="Maria D. Khosla">
+
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="AI Tools Explorer - Form Page">
+    <meta property="og:description" content="Submit your feedback using the AI Tools Explorer form.">
+    <meta property="og:image" content="images/multicolor.webp">
+    <meta property="og:url" content="https://doriskhosla.github.io/wdd231/finalproject/form.html">
+    <meta property="og:type" content="website">
+
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">AI Tools Explorer</div>
+
+
+        <button id="hamburger">☰</button>
+        <nav id="navMenu">
+            <a href="index.html">Home</a>
+            <a href="tools.html">AI Tools</a>
+            <a href="attributions.html">Attributions</a>
+            <a href="form.html" class="active">Form</a>
+            <a href="thankyou.html">Thank You</a>
+        </nav>
+    </header>
+
+    <main class="form-wrapper">
+        <section class="form-card">
+            <h1>Submit Your Feedback</h1>
+            <p class="form-subtitle">We appreciate your thoughts and suggestions!</p>
+    
+            <form action="thankyou.html" method="get" class="styled-form">
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="fname" required>
+    
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label for="rating">Rating (1-10)</label>
+                <input type="number" id="rating" name="rating" min="1" max="10" required>
+    
+                <label for="comments">Comments</label>
+                <textarea id="comments" name="comments" required></textarea>
+    
+                <input type="hidden" id="timestamp" name="timestamp">
+    
+                <button type="submit" class="submit-btn">Submit Feedback</button>
+            </form>
+        </section>
+    
+        <script>
+            document.getElementById("timestamp").value = new Date().toISOString();
+        </script>
+    </main>
+
+
+    <footer>
+        <p>&copy; 2026 AI Tools Explorer</p>
+        
+    </footer>
+
+    <script src="scripts/navigations.js"></script>
+</body>
+
+</html>
