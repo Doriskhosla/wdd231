@@ -1,32 +1,19 @@
-.tools-section {
-    text-align: center;
-    padding: 2rem 1rem;
-}
-
-.tools-section h1 {
-    margin-bottom: 2rem;
-    color: rgb(5, 3, 3);
-}
-
-.tools-section img {
-    display: block;
-    margin: 0 auto;
-    padding: 2rem 0;
-}
-
 /* GRID CONTAINER — consolidated */
 #tools-container {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
+    min-height: 900px;
 }
+
+
 
 /* CARD */
 .tool-card {
     width: 100%;
     box-sizing: border-box;
     border-radius: 8px;
-    min-height: 430px;
+    min-height: 480px;
 }
 
 /* INNER CARD — consolidated */
@@ -55,19 +42,29 @@
 /* IMAGE */
 .tool-card img {
     width: 100%;
-    height: auto;
-    aspect-ratio: 300 / 200;
+    height: 200px;
     object-fit: cover;
     border-radius: 6px;
     margin-bottom: 0.5rem;
 }
 
+
+
 .tools-banner {
-    display: block;
-    margin: 1rem auto;
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
+    .tools-banner {
+        width: 300px;
+        height: 168px;
+        display: block;
+        margin: 1rem auto;
+        border-radius: 10px;
+    }
+}
+
+.tools-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 #navMenu a {
@@ -75,10 +72,12 @@
     /* ← REQUIRED for touch targets */
     margin-right: 0.75rem;
     padding: 0.75rem 1rem;
+
 }
 
 #navMenu.open a {
     margin-bottom: 0.5rem;
+
 }
 
 #hamburger {
@@ -232,56 +231,6 @@ footer {
     transition: transform 0.3s ease-in-out;
 }
 
-/*ATTRIBUTIONS PAGE STYLING*/
-.attributions-body {
-    font-family: Arial, sans-serif;
-    padding: 1rem;
-    line-height: 1.6;
-}
-
-/* Center content like other pages */
-.attributions-body main {
-    max-width: 800px;
-    margin: 2rem auto;
-}
-
-/* Headings */
-.attributions-body h1 {
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-.attributions-body h2 {
-    margin-top: 1.5rem;
-    color: #333;
-}
-
-/* Footer */
-.attributions-body footer {
-    margin-top: 3rem;
-    padding-top: 1rem;
-    border-top: 1px solid #ccc;
-    text-align: center;
-}
-
-/* Attribution Blocks */
-.attrib-block {
-    background-color: #f7f7f7;
-    padding: 1.5rem;
-    margin: 1.5rem 0;
-    border-radius: 8px;
-    border: 1px solid #ddd;
-}
-
-.attrib-block h2 {
-    margin-top: 0;
-    color: #333;
-}
-
-.attrib-block p {
-    margin: 0.5rem 0;
-}
-
 /* High-contrast nav/footer links */
 header a,
 footer a {
@@ -292,4 +241,133 @@ footer a {
 header a.active,
 footer a.active {
     color: #000;
+}
+
+/* ==============================
+   ATTRIBUTIONS PAGE
+   ============================== */
+
+/* Main attribution card */
+.attributions-content {
+    max-width: 900px;
+    margin: 2rem auto 3rem;
+    padding: 2rem 2rem 2rem 2.5rem;
+
+    background-color: #bcd1d08c;
+    border-left: 5px solid #5b5b61;
+    border-radius: 0 12px 12px 0;
+
+    box-shadow: 0 8px 20px rgba(15, 15, 15, 0.12);
+}
+
+/* Page heading */
+.attributions-content h1 {
+    text-align: center;
+    margin: 0 0 2rem;
+    font-size: 2.3rem;
+    color: #20405f;
+}
+
+/* Attribution section headings */
+.attributions-content h2 {
+    margin-top: 2rem;
+    margin-bottom: 0.7rem;
+    padding-bottom: 0.4rem;
+
+    border-bottom: 2px solid #121216;
+
+    color: #2c3e50;
+    font-size: 1.4rem;
+}
+
+/* Attribution paragraphs */
+.attributions-content p {
+    margin: 0.7rem 0;
+    line-height: 1.7;
+    color: #161616;
+    font-size: 1rem;
+}
+
+/* Links */
+.attributions-content a {
+    color: #1a139b;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: inset 0 -2px 0 0 #010014;
+}
+
+.attributions-content a:hover,
+.attributions-content a:focus {
+    text-decoration: underline;
+}
+
+/* Strong text */
+.attributions-content strong {
+    color: #0a0d11;
+}
+
+
+/* ==============================
+   FOOTER
+   ============================== */
+
+footer {
+    margin-top: 3rem;
+    padding: 1.5rem 1rem;
+    background-color: #73c5be;
+    color: #080707;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 1rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    flex-wrap: wrap;
+}
+
+.footer-container p {
+    margin: 0;
+}
+
+.footer-container a {
+    color: #0c0b0b;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.footer-container a:hover,
+.footer-container a:focus {
+    text-decoration: underline;
+}
+
+
+/* ==============================
+   SMALL SCREENS
+   ============================== */
+
+@media (max-width: 600px) {
+
+    .attributions-content {
+        margin: 1.5rem 1rem 2rem;
+        padding: 1.5rem 1.25rem 1.5rem 1.5rem;
+    }
+
+    .attributions-content h1 {
+        font-size: 2rem;
+    }
+
+    .attributions-content h2 {
+        font-size: 1.25rem;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
 }
