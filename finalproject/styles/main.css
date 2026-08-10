@@ -66,7 +66,21 @@
     text-align: center;
 }
 
+/* ===========================
+   HEADER BASE STYLES
+   =========================== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #fff;
+    position: relative;
+    z-index: 1000;
+    /* keeps header above hero image */
+}
 
+/* Hamburger button */
 #hamburger {
     width: 48px;
     height: 48px;
@@ -77,9 +91,12 @@
     background: none;
     border: none;
     cursor: pointer;
+    color: #112941;
 }
 
-/* MOBILE NAVIGATION FIX */
+/* ===========================
+   MOBILE NAVIGATION
+   =========================== */
 @media (max-width: 768px) {
 
     /* Hide menu by default */
@@ -95,6 +112,8 @@
         top: 70px;
         left: 0;
         border-top: 1px solid #333;
+        z-index: 1001;
+        /* menu above everything */
     }
 
     /* Show menu when hamburger is clicked */
@@ -102,22 +121,42 @@
         display: flex;
     }
 
-    /* Style the links */
+    /* Mobile link styles */
     #navMenu a {
         display: block;
         color: #112941;
         font-size: 1.2rem;
         padding: 0.75rem 0;
         border-bottom: 1px solid #ccc;
+        text-decoration: none;
+    }
+}
+
+/* ===========================
+   DESKTOP NAVIGATION
+   =========================== */
+@media (min-width: 769px) {
+
+    /* Hide hamburger on desktop */
+    #hamburger {
+        display: none;
     }
 
-    /* Hamburger button */
-    #hamburger {
-        font-size: 2rem;
+    /* Desktop menu layout */
+    #navMenu {
+        display: flex !important;
+        flex-direction: row;
+        gap: 2rem;
+        position: static;
         background: none;
-        border: none;
-        cursor: pointer;
+        padding: 0;
+    }
+
+    #navMenu a {
+        text-decoration: none;
         color: #112941;
+        font-size: 1rem;
+        border: none;
     }
 }
 
@@ -216,6 +255,12 @@ footer {
     }
 }
 
+/* GLOBAL IMAGE FIX */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
 
 .corner-image {
     position: absolute;
