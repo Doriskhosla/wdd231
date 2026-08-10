@@ -66,18 +66,6 @@
     text-align: center;
 }
 
-#navMenu a {
-    display: inline-block;
-    /* ← REQUIRED for touch targets */
-    margin-right: 0.75rem;
-    padding: 0.75rem 1rem;
-
-}
-
-#navMenu.open a {
-    margin-bottom: 0.5rem;
-
-}
 
 #hamburger {
     width: 48px;
@@ -89,6 +77,48 @@
     background: none;
     border: none;
     cursor: pointer;
+}
+
+/* MOBILE NAVIGATION FIX */
+@media (max-width: 768px) {
+
+    /* Hide menu by default */
+    #navMenu {
+        display: none;
+        flex-direction: column;
+        background-color: #94d1ce;
+        padding: 1rem;
+        gap: 1rem;
+        text-align: center;
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        border-top: 1px solid #333;
+    }
+
+    /* Show menu when hamburger is clicked */
+    #navMenu.show {
+        display: flex;
+    }
+
+    /* Style the links */
+    #navMenu a {
+        display: block;
+        color: #112941;
+        font-size: 1.2rem;
+        padding: 0.75rem 0;
+        border-bottom: 1px solid #ccc;
+    }
+
+    /* Hamburger button */
+    #hamburger {
+        font-size: 2rem;
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: #112941;
+    }
 }
 
 #closeModal {
