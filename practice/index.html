@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>WDD231 Functions Demo</title>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Maia D. Khosla">
+    <meta name="description" content="Other testament of Jesus Christ, the Book of Mormon, and its chapters.">
+
+    
+    <link rel="stylesheet" href="styles/small.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Home Page</h1>
+
+        <nav class="navbar" aria-label="Main navigation">
+            <div class="logo">
+                <img src="images/book-mormon.webp" alt="Site Logo">
+            </div>
+
+            <button id="hamburger" type="button" aria-label="Open navigation menu" aria-expanded="false">
+                ☰
+            </button>
+
+            <ul id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="chapters.html">Chapters</a></li>
+                <li><a href="articles.html">Articles</a></li>
+            </ul>
+
+            <button id="darkToggle" type="button" aria-label="Toggle dark mode">
+                🌙
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <img src="images/senales.webp" alt="Hero banner">
+            <div class="hero-text">
+                <h2>`Behold, mine arm of mercy is extended towards you, and whosoever will come, him will I receive; and blessed are those who come unto me.` </h2>
+
+                <p>3 Nephi 9:14</p>
+            </div>
+        </section>
+
+
+        <section>
+            <h2>Add Favorite Chapter</h2>
+
+            <input id="favchap" type="text" placeholder="Enter chapter" aria-label="Favorite chapter">
+
+            <button id="addBtn" type="button">
+                Add Chapter
+            </button>
+
+            <p id="message"></p>
+
+            <ul id="chapList"></ul>
+        </section>
+
+        <section>
+            <h2>Fetch Scripture Article</h2>
+
+            <button id="fetchBtn" type="button">
+                Load Article Title
+            </button>
+
+            <p id="article"></p>
+        </section>
+
+        <section>
+            <h2>AI Tools (Card Grid Example)</h2>
+
+            <div id="cardGrid" class="grid"></div>
+        </section>
+
+        <section>
+            <h2>Church Article</h2>
+
+            <button id="churchBtn" type="button">
+                Load Church Article
+            </button>
+
+            <p id="churchArticle"></p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© <span id="year"></span> WDD231 Maria D. Hernandez</p>
+    </footer>
+
+    <script src="scripts/practice.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+[
+    {
+        "name": "1 Nephi",
+        "category": "Small Plates"
+    },
+    {
+        "name": "2 Nephi",
+        "category": "Small Plates"
+    },
+    {
+        "name": "Jacob",
+        "category": "Small Plates"
+    },
+    {
+        "name": "Enos",
+        "category": "Small Plates"
+    },
+    {
+        "name": "Mosiah",
+        "category": "Record of Mosiah"
+    },
+    {
+        "name": "Alma",
+        "category": "Record of Alma"
+    },
+    {
+        "name": "Helaman",
+        "category": "Record of Helaman"
+    },
+    {
+        "name": "3 Nephi",
+        "category": "Record of Nephi"
+    },
+    {
+        "name": "Ether",
+        "category": "Jaredite Record"
+    },
+    {
+        "name": "Moroni",
+        "category": "Moroni’s Writings"
+    }
+]

@@ -1,0 +1,14 @@
+[
+    {
+        "name": "Copilot",
+        "category": "AI Assistant"
+    },
+    {
+        "name": "ChatGPT",
+        "category": "AI Model"
+    },
+    {
+        "name": "Gemini",
+        "category": "AI Model"
+    }
+]

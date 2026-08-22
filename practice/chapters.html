@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the books and chapters of the Book of Mormon.">
+    <title>Book of Mormon Chapters</title>
+
+    <link rel="stylesheet" href="styles/small.css">
+</head>
+
+<body>
+
+    <!-- ===========================
+         HEADER + NAVIGATION
+    ============================ -->
+    <header>
+        <h1>Book of Mormon Chapters</h1>
+
+        <nav class="navbar" aria-label="Main navigation">
+            <div class="logo">
+                <img src="images/book-mormon.webp" alt="Site Logo">
+            </div>
+
+            <button id="hamburger" type="button" aria-label="Open navigation menu" aria-expanded="false">
+                ☰
+            </button>
+
+            <ul id="navMenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="chapters.html">Chapters</a></li>
+                <li><a href="articles.html">Articles</a></li>
+            </ul>
+
+            <button id="darkToggle" type="button" aria-label="Toggle dark mode">
+                🌙
+            </button>
+        </nav>
+    </header>
+
+    <!-- ===========================
+         MAIN CONTENT
+    ============================ -->
+    <main>
+
+        <!-- BOOK LIST SECTION -->
+        <section class="book-section">
+            <h2> Book of Mormon</h2>
+            <p>Explore the Book of Mormon.</p>
+
+            <div id="bookList" class="book-grid">
+                <!-- JavaScript will inject book cards here -->
+            </div>
+        </section>
+
+        <!-- IMAGE GALLERY SECTION -->
+        <section>
+            <h2>Image Gallery</h2>
+
+            <div class="gallery">
+                <img src="images/bautizo.webp" alt="Gallery image 1">
+                <img src="images/senales.webp" alt="Gallery image 2">
+                <img src="images/guia.webp" alt="Gallery image 3">
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ===========================
+         MODAL WINDOW
+    ============================ -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span id="closeModal" class="close">&times;</span>
+            <h3>Modal Title</h3>
+            <p>This is a dynamic modal window.</p>
+        </div>
+    </div>
+
+    <!-- ===========================
+         LOADING SPINNER
+    ============================ -->
+    <div id="spinner" class="spinner"></div>
+
+    <!-- ===========================
+         FOOTER
+    ============================ -->
+    <footer>
+        <p>© <span id="year"></span> WDD231 Maria D. Hernandez</p>
+    </footer>
+
+    <!-- ===========================
+         JAVASCRIPT
+    ============================ -->
+    <script src="scripts/chapter.js"></script>
+
+</body>
+
+</html>
