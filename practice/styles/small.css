@@ -38,6 +38,7 @@ li {
     margin: 0.3rem 0;
 }
 
+/* NAVBAR */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -46,35 +47,40 @@ li {
     background: var(--nav-bg);
     color: var(--text);
     border-radius: 8px;
-
 }
 
+/* MOBILE DEFAULT */
 #navMenu {
     display: none;
     flex-direction: column;
     gap: 1rem;
+    margin-top: 1rem;
 }
 
 #navMenu.open {
     display: flex;
 }
 
+/* DESKTOP */
+@media (min-width: 768px) {
+    #navMenu {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        margin-top: 0;
+    }
+
+    #hamburger {
+        display: none;
+    }
+}
+
+/* HAMBURGER BUTTON */
 #hamburger {
     font-size: 2rem;
     background: none;
     border: none;
     color: var(--text);
-}
-
-@media (min-width: 768px) {
-    #hamburger {
-        display: none;
-    }
-
-    #navMenu {
-        display: flex;
-        flex-direction: row;
-    }
 }
 
 .grid {
@@ -91,37 +97,6 @@ li {
 
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    background: var(--nav-bg);
-}
-
-#navMenu {
-    display: none;
-    flex-direction: column;
-    gap: 1rem;
-    margin-top: 1rem;
-}
-
-#navMenu.open {
-    display: flex;
-}
-
-@media (min-width: 768px) {
-    #navMenu {
-        display: flex;
-        flex-direction: row;
-        gap: 2rem;
-        margin-top: 0;
-    }
-
-    #hamburger {
-        display: none;
-    }
-}
 
 #darkToggle {
     margin-left: 1rem;
